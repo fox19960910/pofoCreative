@@ -1,0 +1,157 @@
+.header{
+    position: absolute;
+    width:100%;
+    top:0;
+    left:0;
+    right:0;
+    background-color: transparent;
+    z-index: 10;
+    
+    .logo{
+        img{
+            max-height:26px;
+            height:auto;
+        }
+    }
+    .header__nav{
+        flex:1;
+        justify-content: flex-end;
+        display:flex;
+        .nav__bars{
+            display: none;
+            i{
+                @include font-style(1.6rem,#fff);
+            }
+        }
+        .nav__menu{
+            flex:1;
+            display:flex;
+            justify-content: flex-end;
+            margin-right:2rem;
+            li.menu__items{
+                cursor: pointer;
+                &:not(:last-child){
+                    margin-right:4rem;
+                }
+                a.nav-links{
+                    padding: 3rem 0;
+                    display: inline-block;
+                    @include font-style(1.2rem,#fff);
+                    text-transform: uppercase;
+                    transition: 0.4s;;
+                    font-weight: 400;
+                    &:hover{
+                        color:$second-color;
+                    }
+                   
+                }
+                i{
+                    display:none;
+                }
+            }
+            .item__parent{
+                &:hover{
+                    .item__child{
+                        opacity: 1;
+                        pointer-events: unset;
+                    } 
+                }
+                .item__child{
+                    position: absolute;
+                    background:rgba(35,35,35,1);
+                    padding: 4rem;
+                    width:85%;
+                    top:5rem;
+                    left:50%;
+                    transform: translateX(-50%);
+                    opacity: 0;
+                    transition: 0.4s;
+                    pointer-events: none;
+                    ul{
+                        .megamenu{
+                            padding: 0 6rem;
+                            &:not(:last-child){
+                                border-right: 1px solid #4b4b4b;
+                            }
+                            ul{
+                              .mega__heading{
+                                @include font-style(1.2rem,#fff);
+                                text-transform: uppercase;
+                              }
+                              li{
+                                  margin-bottom:1.5rem;
+                                  a{
+                                    display: inline-block;
+                                    @include font-style(1.2rem,#9d9d9d);
+                                    transition: 0.4s;;
+                                    font-weight: 400;
+                                    &:hover{
+                                        color:$second-color;
+                                    }
+                                  }
+                                  
+                              }
+                          }
+                        }
+                    }
+                }
+            }
+        }
+        .nav__search{
+            margin-right:2rem;
+            
+            i{
+                @include font-style(1.6rem,#fff);
+                padding-left:3rem;
+                padding-right:3rem;
+                border-left:1px solid $second-color;
+                border-right:1px solid $second-color;
+            }
+        }
+        .nav__social{
+            a{
+                display: inline-block;
+                &:not(:last-child){
+                    margin-right:2rem;
+                }
+                i{
+                    @include font-style(1.6rem,#fff);
+                }
+            }
+        }
+    }
+}
+.fixed__header{
+    position: fixed;
+    animation: moveDown 1s;
+    transition: 0.4s;
+    background-color: #fff;
+    .header__nav{
+        .nav__bars{
+            i{
+                @include font-style(1.6rem,$primary-color);
+            }
+        }
+        .nav__menu{
+            li.menu__items{
+                a.nav-links{
+  
+                    @include font-style(1.2rem,$primary-color);
+                   
+                }
+            }
+        }
+        .nav__search{
+            i{
+                @include font-style(1.6rem,$primary-color);
+            }
+        }
+        .nav__social{
+            a{
+                i{
+                    @include font-style(1.6rem,$primary-color);
+                }
+            }
+        }
+    }
+}

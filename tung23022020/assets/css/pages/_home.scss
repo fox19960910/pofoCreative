@@ -1,0 +1,475 @@
+
+//<!-- banner -->
+
+.banner{
+    position: relative;
+    top:0;
+    left:0;
+    .wrap__slide{
+        background-size: cover !important;
+        background-position: center center !important;
+        background-attachment: fixed;
+        height: 100vh;
+        width:100%;
+        position: relative;
+        .overlay{
+            @include overlay (rgba(0, 0, 0, 0.5));
+        }
+        .slide-banner{
+            position: relative;
+            z-index: 1;
+            padding-top:18rem ;
+            text-align: center;
+            .hero__intro{
+                @include font-style(2.2rem,#fff);
+                margin-bottom:1.5rem;
+                font-weight:300;
+                
+            }
+            .banner__title{
+                @include font-style(13rem,#fff);
+                margin-bottom:2rem;
+                text-transform: uppercase;
+                line-height: 85%;
+                letter-spacing: -3px;
+            }
+        }
+    }
+}
+//<!-- feature -->
+.feature{
+    .feature__item{
+        display:flex; 
+        .feature__icon{
+            padding:0 2.5rem;
+            position: relative;
+            &::after{
+                content:"";
+                position: absolute;
+                width:1px;
+                height:30%;
+                background:rgb(219, 62, 62);
+                top:0;
+                right:0;
+            }
+            i{
+                @include font-style(2.2rem,$second-color);
+            }
+        }
+        .feature__content{
+            padding:0 2.5rem;
+            .feature__title{
+                @include font-style(1.6rem,$primary-color);
+                margin-bottom:1.5rem;
+                font-weight:300;
+            }
+            .feature__des{
+                @include font-style(1.4rem,$second-color);
+                padding-right:5rem;
+            }
+        }
+    }
+}
+//<!-- ourteam -->
+.ourteam{
+    .ourteam__background2{
+        @include bg-img('../img/parallax-bg2.jpg', 100vh);
+        position: relative;
+        .overlay{
+            @include overlay (rgba(0, 0, 0, 0.5));
+        }
+    }
+    .ourteam__background3{
+        @include bg-img('../img/parallax-bg3.jpg', 100vh);
+        position: relative;
+        .overlay{
+            @include overlay (rgba(0, 0, 0, 0.5));
+        }
+    }
+    .ourteam__content{
+        padding:10rem 8rem;
+        .ourteam__title{
+            @include font-style(2.7rem,$primary-color);
+            position: relative;
+            padding-bottom:2rem;
+            &::after{
+                content:"";
+                position:absolute;
+                bottom:0;
+                left:0;
+                height:2px;
+                background:$primary-color;
+                width:80%;
+            }
+        }
+        .ourteam__des{
+            padding-top:2rem;
+            @include font-style(1.4rem,$second-color);
+            margin-bottom:4rem;
+            line-height:170%;
+        }
+    }
+}
+//<!-- portfolio -->
+.portfolio{
+    padding-top:10rem;
+    .portfolio__nav{
+        display: flex;
+        justify-content: center;
+        margin-bottom:4rem;
+        li{
+            padding-bottom:0.5rem;
+            transition: 0.4s;
+            &:not(:last-child){
+                margin-right:4rem;
+            }
+            a{
+                @include font-style(1.2rem,$primary-color);
+                text-transform: uppercase;
+            }
+            &.active{
+                border-bottom: 1px solid $primary-color;
+            }
+            &:hover{
+                border-bottom: 1px solid $primary-color;
+            }
+        }
+    }
+    .portfolio__item{
+        position: relative;
+        width:97%;
+        margin-bottom:1rem;
+        img{
+            width:100%;
+        }
+        .overlay{
+            @include overlay (rgba(0, 0, 0, 0.9));
+            opacity: 0;
+            transition: 0.4s;
+        }
+        .portfolio__content{
+            @include elementCenter;
+            text-align: center;
+            opacity: 0;
+            transition: 0.4s;
+            cursor:pointer;
+            .portfolio__title{
+                @include font-style(1.4rem,#fff);
+                text-transform: uppercase;
+                margin-bottom:1.5rem;
+                padding-top:3rem;
+                position: relative;
+                &::after{
+                    content:"";
+                    position: absolute;
+                    top:0;
+                    left:50%;
+                    transform: translateX(-50%);
+                    width:50%;
+                    background:rgb(219, 62, 62);
+                    height:1px;
+                }
+            }
+            .portfolio__des{
+                @include font-style(1.2rem,$second-color);
+                text-transform: uppercase;
+            }
+        }
+        &:hover{
+            .overlay,.portfolio__content{
+                opacity: 1;
+            }
+        }
+        
+    }
+}
+//<!-- counter -->
+.counter{
+    .counter__item{
+        .counter__icon{
+            padding:0 2rem;
+            i{
+                @include font-style(2.2rem,$second-color);
+            }
+        }
+        .counter__content{
+            padding:0 2rem;
+            .counter__title{
+                @include font-style(1.2rem,$second-color);
+                padding-bottom:1.5rem;
+                font-weight:300;
+                position: relative;
+                &::after{
+                    content:"";
+                    position: absolute;
+                    width:40%;
+                    height:1px;
+                    background:rgb(219, 62, 62);
+                    bottom:0;
+                    left:0;
+                }
+            }
+            .counter__number{
+                @include font-style(2.7rem,$primary-color);
+                margin-bottom:1.5rem;
+                padding-top:0;
+                font-weight:300;
+            }
+        }
+    }
+}
+//<!-- information -->
+.information{
+    .info__img{     
+        background-size: cover !important;
+        background-position: center center !important;
+        height: 100%;
+        &:hover{
+            filter:grey;
+        }
+        &.img1{
+            background: url('../img/homepage-3-parallax-img1.jpg') no-repeat;
+        }
+        &.img2{
+            background: url('../img/homepage-3-parallax-img2.jpg') no-repeat;
+        }
+        &.img3{
+            background: url('../img/homepage-3-parallax-img3.jpg') no-repeat;
+        }
+    }   
+    .info__content{
+        text-align: center;
+        padding:3rem 10rem;
+        background: #f8f8f8;
+        .info__title{
+            @include font-style(2.2rem,$primary-color); 
+            margin-bottom:2rem;
+            line-height: 140%;
+            font-weight:400;
+        }
+        .info__des{
+            @include font-style(1.4rem,$second-color); 
+            padding-bottom:4rem; 
+            position: relative;
+            line-height: 200%;
+                &::after{
+                    content:"";
+                    position: absolute;
+                    width:40%;
+                    height:1px;
+                    background:rgb(219, 62, 62);
+                    bottom:0;
+                    left:50%;
+                    transform:translateX(-50%);
+                }
+        }
+    }
+    .vector-down, .vector-up{
+        position: absolute;
+        left:50%;
+        
+    }
+    .vector-down{
+        bottom:0;
+        transform: translate(-50%,1rem);
+    }
+    .vector-up{
+        top:0;
+        transform: translate(-50%,-1rem);
+    }
+
+}
+//<!-- progress -->
+.progress{
+    .progress__step{
+        text-align: center;
+        .step__number{
+            width:9rem;
+            height:9rem;
+            border:1.5px solid rgb(219, 62, 62);
+            border-radius:50%;
+            margin-bottom: 2.5rem;
+            margin-left: auto;
+            margin-right:auto;
+            
+            p{
+                @include font-style(2.7rem,$primary-color); 
+                font-weight: 700;
+            }
+            &:hover{
+                background-color: rgb(219, 62, 62);
+                p{
+                    color:#fff; 
+                }
+            }
+            
+        }
+        .step__content{
+            padding:0 8rem;
+            .step__title{
+                @include font-style(1.6rem,$primary-color); 
+                margin-bottom: 1.5rem;
+                font-weight:400;
+
+            }
+            .step__des{
+                @include font-style(1.4rem,$second-color); 
+                line-height: 200%;
+            }
+        }
+    }
+    .col-3{
+        position: relative;
+        &:not(:last-child){
+            &::after{
+                position: absolute;
+                height: 1px;
+                width: 50%;
+                content: "";
+                background: #d3d3d3;
+                left: 0;
+                top: 0;
+                transform: translate(150%, 5rem);
+
+            }
+        }
+    }
+}
+//<!-- step -->
+//<!-- testimoni -->
+.testimoni{
+    @include bg-img('../img/testimonial-parallax-img.jpg', 50vh);
+    .overlay{
+        @include overlay (rgba(0, 0, 0, 0.5));
+    }
+    .next-t{
+        @include elementCenterRight;
+        right:4rem !important;
+        cursor: pointer;
+    }
+    .prev-t{
+        @include elementCenterLeft;
+        left:4rem !important;
+        cursor: pointer;
+    }
+    .testimoni__item{
+        margin:auto;
+        width:60%;
+        display: flex;
+        .testimoni__avt{
+            width:10rem;
+            height:10rem;
+            border-radius:50%;
+            overflow: hidden;
+            img{
+                width:100%;
+            }
+        }
+        .testimoni__content{
+            padding-left:5rem;
+            width: 80%;
+            .testimoni__des{
+                line-height:170%;
+                @include font-style(1.6rem,$second-color); 
+                margin-bottom:2rem;
+            }
+            .testimoni__guest{
+                text-transform: uppercase;
+                @include font-style(1.4rem,#fff); 
+            }
+        }
+    }
+}
+//<!-- news -->
+.news{
+    .news__post{
+        .post__content{
+            padding-bottom:2rem;
+            border-bottom: 1px solid #dfdfdf;
+            
+            .post__date{
+                color:#888;
+                margin-bottom:2rem;
+                text-transform: uppercase;
+            }
+            .post__title{
+                margin-bottom:2rem;
+                a{
+                    @include font-style(1.6rem,$primary-color); 
+                    font-weight:400;
+                    line-height: 170%;
+                }
+            }
+            .post__des{
+                @include font-style(1.4rem,$second-color); 
+                line-height: 170%;
+            }
+        }
+        .post__author{
+            margin-top:2rem;
+            display:flex;
+            align-items: center;
+            .author__avt{
+                overflow:hidden;
+                width:3.5rem;
+                height:3.5rem;
+                border-radius:50%;
+                img{
+                    width:100%;
+                }
+            }
+            .author__name{
+                color:#888;
+                padding-left:1.5rem;
+                text-transform: uppercase;
+                font-size:1.2rem;
+            }
+        }
+    }
+}
+//<!-- client -->
+.client{
+    background:#f8f8f8;
+    border-top:1px solid #eeee;
+    .client__list {
+        display: flex;
+        li{
+            flex:0 0 25%;
+            max-width:25%;
+            img{
+                // width:100%;
+            }
+        }
+    }
+    .owl-nav{
+        display:none;
+    }
+    .owl-carousel{
+        .owl-item{
+            img{
+                width:22.5rem;
+            }
+        }
+    }
+    
+}
+//<!-- call to action -->
+.calltoaction{
+    @include bg-img('../img/call-to-action-bg.jpg', 30vh);
+    position: relative;
+    .overlay{
+        @include overlay (rgba(0, 0, 0, 0.5));
+    }
+    .call__item{
+        @include elementCenter;
+        width:80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            @include font-style(2.7rem,#fff); 
+            font-weight:400;
+            margin-right:2rem;
+        }
+    }
+}

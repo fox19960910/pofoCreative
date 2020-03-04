@@ -1,0 +1,78 @@
+.footer{
+    .footer__information{
+        padding-bottom:4rem;
+        border-bottom: 1px solid #f3f3f3;
+        .footer__item{
+            .footer__title{
+                margin-bottom:2rem;
+                font-weight: 400;
+            }
+        }
+        .footer__logo{
+            a{
+                img{
+                    max-height: 2.6rem;
+                }
+            }
+        }
+        .footer__contact{
+            ul{
+                li{
+                    @include font-style(1.2rem,$second-color);
+                    margin-bottom:1.5rem;
+                }
+            }
+        }
+        .footer__social{
+            padding-right:8rem;
+            ul{
+                li{
+                   
+                    margin-bottom:1.5rem;
+                    a{
+                        @include font-style(1.2rem,$second-color);
+                        transition:0.4s;
+                        &:hover{
+                            color:rgb(219, 62, 62);
+                        }
+                    }
+                }
+            }
+        }
+        .footer__subcrible{
+            .form-control{
+                margin-bottom:1rem;
+                input[type=text]{
+                    width:100%;
+                    border:1px solid $primary-color;
+                    padding: 1.5rem 1rem;
+                    outline: none;
+                    color:$primary-color;
+                    &::placeholder{
+                        color:$primary-color;
+                    }
+                }
+                input[type=submit]{
+                    border:1px solid $primary-color;
+                    padding:0.8rem 1.5rem;
+                    background:$primary-color;
+                    color:#fff;
+                    outline:none;
+                    &:hover{
+                        background:#fff;
+                        text-transform: uppercase;
+                        color:$primary-color;
+                    }
+                }
+            }
+        }
+    }
+    #copy{
+        @include font-style(1.4rem,$second-color);
+        font-weight:300;
+        margin-top:3rem;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+}
