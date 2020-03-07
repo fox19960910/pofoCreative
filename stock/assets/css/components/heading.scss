@@ -1,0 +1,26 @@
+//HEAD SECTION  
+.head__section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0 4rem 0;
+    text-align: center;
+    h2{
+        font-size:2.7rem;
+        text-transform: uppercase;
+    }
+    .section__heading {
+        font-size: 3.8rem;
+        font-family:$f-dance;
+        font-weight:700;
+    }
+    .section__description {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        padding-top: 2rem;
+        padding-bottom:1.5rem;
+        display: inline-block;
+        margin: 0 auto;
+        border-bottom: 3px solid $bg-color;
+    }
+    
+}
