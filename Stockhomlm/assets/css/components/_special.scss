@@ -1,0 +1,32 @@
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 12px solid $primary-color;
+    border-bottom: 10px solid transparent;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-left: 16px solid $primary-color;
+    border-bottom: 14px solid transparent;
+}
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-right: 18px solid transparent;
+    border-top: 16px solid #fff;
+    border-left: 18px solid transparent;
+}
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-right: 18px solid transparent;
+    border-bottom: 16px solid #fff;
+    border-left: 18px solid transparent;
+}
+.bg-layout{
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);;
+}

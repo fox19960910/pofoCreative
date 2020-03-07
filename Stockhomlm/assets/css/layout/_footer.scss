@@ -1,0 +1,103 @@
+.footer{
+    font-size:1.2rem;
+    &__wrap{
+
+    }
+    &__title{
+        margin-bottom:2.5rem;
+        font-size:1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+    }
+    &__item{
+        width:90%;
+    }
+    &__work-time{
+        .work-time{
+            &__item{
+                display: flex;
+                margin-bottom:1.5rem;
+            }
+            &__text{
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            &__line{
+               flex:1;
+                border-bottom:1px dotted #fff;
+            }
+        }
+    }
+    &__contact{
+        font-size:1.4rem;
+        color: #e4e4e4;
+        p{
+            margin-bottom:1rem;
+            line-height: 1.5;
+        }
+    }
+    &__info{
+        ul{
+            li{
+                margin-bottom:1.5rem;
+                a{
+                    font-size:1.3rem;
+                    text-transform: uppercase;
+                    color:#fff;
+                    font-weight:700;
+                    transition: 0.4s;
+                    &:hover{
+                        color:rgb(230, 230, 230);
+                    }
+                }
+            }
+        }
+    }
+    &__form{
+        width:100%;
+        position: relative;
+        margin: 2rem 0;
+        input{
+            border:2px solid #e4e4e4;
+            background:#a4a4a4;
+            width:100%;
+            padding: 2rem;
+            outline: none;
+            color:#fff;
+            &::placeholder{
+                color:#fff;
+            }
+        }
+        i{
+            color:#fff;
+            position: absolute;
+            top:50%;
+            right:2rem;
+            transform: translateY(-50%);
+        }
+    }
+    &__social{
+        display: flex;
+        a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height:3rem;
+            width:3rem;
+            border-radius:50%;
+            background:#fff;
+            transition: 0.5s;
+            &:not(:first-child){
+                margin-left:1.5rem;
+            }
+            i{
+                color:$primary-color;
+
+            }
+            &:hover{
+                background:rgb(231, 231, 231)
+            }
+        }
+    }
+}

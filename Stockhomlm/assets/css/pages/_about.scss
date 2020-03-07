@@ -1,0 +1,43 @@
+//chef
+.chef{
+
+    &__item{
+        max-width:98%;
+        text-align: center;
+    }
+    &__img{
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__content{
+        margin-top:2rem;
+    }
+    &__position{
+        font-size:1.2rem;
+        color:#a4a4a4;
+        margin-bottom:1.5rem;
+        text-transform: uppercase;
+    }
+    &__name{
+        font-size:2rem;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+    &__sign{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 16.4rem;
+        }
+    }
+}
+//testimoni
+.testimoni{
+    &__img{
+        width:8.8rem !important;
+    }
+    .owl-nav{
+        display: none;
+    }
+}

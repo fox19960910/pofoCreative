@@ -1,0 +1,17 @@
+.article{
+    &__contact{
+        margin-bottom:5rem;
+        h2{
+            font-size:1.5rem;
+            text-transform: uppercase;
+            margin-bottom:2rem;
+        }
+        ul{
+            li{
+                font-size:1.4rem;
+                color:#525C66;
+                line-height: 1.7;
+            }
+        }
+    }
+}

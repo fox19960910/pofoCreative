@@ -1,0 +1,140 @@
+
+//<!-- banner -->
+.hero {
+    @include bg-not-height-img;
+    width: 100%;
+    padding-top:20rem;
+    &__wrap{
+        padding-bottom:15rem;
+    }
+}
+// restaurant
+.restaurant{
+    &__img{
+        width:70%;
+        margin:0 auto;
+    }
+}
+//people
+.people{
+    @include bg-not-height-img;
+    padding: 13rem 0;
+}
+//product
+.product{
+    @include bg-img(100vh); 
+}
+//menu
+.menu{
+    &__img{
+        width:70%;
+        margin: 0 auto;
+    }
+}
+//special
+.special{
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: fixed;
+    &__wrap{
+        background:#fff;
+        padding: 9rem 7rem;
+        margin: 0 auto;
+        margin-top:4rem;
+    }
+    &__menu{
+        margin-bottom:9rem;
+    }
+    &__item{
+        display: flex;
+        width: 90%;
+        &:not(:last-child){
+            margin-bottom:2.5rem;
+        }
+    }
+    &__img{
+        width:7rem;
+    }
+    &__content{
+        width: 100%;
+        margin-left: 2.5rem;
+    }
+    &__title{
+        display: flex;
+        justify-content: space-around;
+         margin-bottom:1rem;
+        .title{
+            &__name{
+                font-size:1.5rem;
+            }
+            &__line{
+                flex:1;
+                border-bottom:1px solid #a4a4a4;
+            }
+        }
+    }
+    &__description{
+       p{
+        font-size:1.2rem;
+        text-transform: uppercase;
+        color: #a4a4a4;
+       }
+    }
+}
+//book table
+.book-table{
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: fixed;
+}
+form{
+    margin: 3rem auto;
+    .form{
+        margin-bottom:3rem;
+        &__control{
+            max-width: 114rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        &__style{
+            flex-grow: 1;
+            flex-basis: 23%;
+            max-width: 23%;
+            display: flex;
+            align-items: center;
+            label{
+                font-size:2rem;
+                font-weight:500;
+                margin-right:1rem;
+            }
+            input, .select{
+                border:2px solid #a4a4a4;
+                padding:1.8rem 2.5rem;
+                width: 100%;
+                outline: none;
+            }
+            .select{
+                height:55px;
+                border-radius:0;
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width:768px){
+    form{
+        margin-bottom:3rem;
+        .form{
+            &__control{
+                flex-wrap: wrap;
+            }
+            &__style{
+                flex-basis: 100%;
+                max-width: 100%;
+                margin-bottom:2rem;
+            }
+        }
+    }
+}

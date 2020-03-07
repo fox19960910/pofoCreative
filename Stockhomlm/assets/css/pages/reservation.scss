@@ -1,0 +1,14 @@
+.article{
+    margin-top:10rem;
+    &__item{
+        margin: 0 auto;
+        width:95%;
+        position: relative;
+        .overlay{
+            @include overlay (rgba(255, 255, 255, 0.3))
+        }
+    }
+    &__btn{
+        @include elementCenter;
+    }
+}

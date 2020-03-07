@@ -1,0 +1,134 @@
+//HEAD SECTION  
+.main{
+    &__content{
+        text-align:center;
+    }
+    &__title{
+        margin: 0 auto;
+        letter-spacing: 7px;
+        font-weight: 700;
+        padding: 3rem 0;
+        text-transform: uppercase;
+        &--huge{
+            font-size:4.8rem;
+            color:#fff;
+            letter-spacing: 9px;
+            width: 30%;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+        &--hugeblack{
+            font-size:4.8rem;
+            color:#000;
+            letter-spacing: 9px;
+            width: 30%;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+        &--big{
+            font-size: 4rem;
+            width: 30%;
+        }
+        &--medium{
+            font-size: 3.2rem;
+            width: 45%;
+        }
+        
+    }
+    &__description{
+        margin:0 auto;
+        
+        font-size:1.7rem;
+        color:$primary-color;
+        line-height:1.5;
+        padding-bottom:3.5rem;
+        &--tiny{
+            width: 30%;
+            font-size:1.2rem;
+        }
+        &--small{
+            width: 60%;
+        }
+        &--medium{
+            width:30%;
+        }
+        &--big{
+            width:35%;
+        }
+        &--huge{
+            font-size:1.8rem;
+            color:#fff;
+            width: 35%;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:992px){
+    .main{
+        &__content{
+        }
+        &__title{
+            &--huge{
+                width: 60%;
+            }
+            &--big{
+                width: 40%;
+            }
+            &--medium{
+                width: 60%;
+            }
+            
+        }
+        &__description{
+
+            &--small{
+
+            }
+            &--medium{
+                width: 60%;
+            }
+            &--big{
+                width: 60%;
+            }
+            &--huge{
+
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .main{
+        &__content{
+        }
+        &__title{
+            &--huge{
+                width: 80%;
+            }
+            &--big{
+                width: 50%;
+            }
+            &--medium{
+                width: 80%;
+            }
+            
+        }
+        &__description{
+
+            &--small{
+
+            }
+            &--medium{
+                width: 60%;
+            }
+            &--big{
+                width: 60%;
+            }
+            &--huge{
+
+            }
+        }
+    }
+}
