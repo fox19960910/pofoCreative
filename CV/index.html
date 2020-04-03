@@ -12,7 +12,7 @@
    <!-- google-font -->
    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body class="geometry__tamgiac">
     <!-- header -->
     <header class="header">
         <nav class="nav-head">
@@ -33,6 +33,20 @@
             <label for="nav-checkbox" class="nav-responsive__button">
                 <span class="nav-responsive__line"></span>
             </label>
+            <div class="nav-responsive__background"></div>
+            <nav class="nav-responsive__nav">
+                <ul class="nav-responsive__list">
+                    <li class="nav-responsive__item">
+                        <a href="" class="nav-responsive__link">about me</a>
+                    </li>
+                    <li class="nav-responsive__item">
+                        <a href="" class="nav-responsive__link">portfolio</a>
+                    </li>
+                    <li class="nav-responsive__item">
+                        <a href="" class="nav-responsive__link">contact me</a>
+                    </li>
+                </ul>
+            </nav>
             
         </div>
     </header>
@@ -289,26 +303,30 @@
                         </div>
                     </section>
                 </div>
+                <!-- side right -->
                 <div class="side-right">
                    <nav class="nav-scroll">
                        <ul class="nav-scroll__list">
                            <li class="nav-scroll__item">
-                               <a href="" class="nav-scroll__link nav-scroll__logo">
+                               <a href="#section-about" class="nav-scroll__link nav-scroll__logo">
                                    <img src="img/avt.jpg" alt="">
                                </a>
                             </li>
                             <li class="nav-scroll__item">
-                                <a href="section-work-experience" class="nav-scroll__link ">
+                                <a href="#section-work-experience" class="nav-scroll__link ">
+                                    <span class="nav-scroll__link-arrow nav-scroll__link-arrow-left">Experience</span>
                                     <i class="fa fa-briefcase" aria-hidden="true"></i>
                                 </a>
                              </li>
                              <li class="nav-scroll__item">
-                                <a href="section-portfolio" class="nav-scroll__link ">
+                                <a href="#section-portfolio" class="nav-scroll__link ">
+                                    <span class="nav-scroll__link-arrow nav-scroll__link-arrow-right">Portfolio</span>
                                     <i class="fa fa-folder-open" aria-hidden="true"></i>
                                 </a>
                              </li>
                              <li class="nav-scroll__item">
                                 <a href="" class="nav-scroll__link ">
+                                    <span class="nav-scroll__link-arrow nav-scroll__link-arrow-left">Contact</span>
                                     <i class="fa fa-address-card" aria-hidden="true"></i>
                                 </a>
                              </li>
