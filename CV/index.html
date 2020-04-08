@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tung'CV | Home</title>
-   <!-- fontawsome -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <!-- customize css -->
-   <link rel="stylesheet" href="css/main.css">
-   <!-- google-font -->
-   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- customize css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- google-font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body class="geometry__tamgiac">
-    <!-- header -->
-    <header class="header">
-        <nav class="nav-head">
-            <ul class="nav-head__list">
-                <li class="nav-head__item">
-                    <a href="" class="nav-head__link">home</a>
-                </li>
-                <li class="nav-head__item">
-                    <a href="" class="nav-head__link">portfolio</a>
-                </li>
-                <li class="nav-head__item">
-                    <a href="" class="nav-head__link">contact</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="wrap-all">
+        <!-- nav mobile -->
         <div class="nav-responsive">
             <input type="checkbox" class="nav-responsive__checkbox" id="nav-checkbox">
             <label for="nav-checkbox" class="nav-responsive__button">
                 <span class="nav-responsive__line"></span>
             </label>
             <div class="nav-responsive__background"></div>
-            <nav class="nav-responsive__nav">
+            <nav class="nav-responsive__nav u-flex u-justify-content-center u-align-item-center">
                 <ul class="nav-responsive__list">
                     <li class="nav-responsive__item">
                         <a href="" class="nav-responsive__link">about me</a>
@@ -47,296 +36,376 @@
                     </li>
                 </ul>
             </nav>
-            
         </div>
-    </header>
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <nav class="nav-head">
+                    <ul class="nav-head__list u-flex u-justify-content-end">
+                        <li class="nav-head__item">
+                            <a href="" class="nav-head__link">home</a>
+                        </li>
+                        <li class="nav-head__item">
+                            <a href="" class="nav-head__link">portfolio</a>
+                        </li>
+                        <li class="nav-head__item">
+                            <a href="" class="nav-head__link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <!-- main -->
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="side-left">
-                    <div class="card">
-                        <div class="card__avt u-margin-bottom-4 u-margin-top-4">
-                            <img src="img/avt.jpg" alt="">
-                        </div>
-                        <div class="card__content u-margin-bottom-4">
-                            <h2 class="card__name u-margin-bottom-2">Le Xuan Tung</h2>
-                            <p class="card__position">Front-End | Intern</p>
-                        </div>
-                        <div class="card__infomation">
-                            <div class="card__social">
-                                <a href="" class="card__social-link">
-                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                </a>
-                                <a href="" class="card__social-link">
-                                    <i class="fa fa-google" aria-hidden="true"></i>
-                                </a>
-                                <a href="" class="card__social-link">
-                                    <i class="fa fa-github" aria-hidden="true"></i>
-                                </a>
+        <!-- main -->
+        <main>
+            <div class="container">
+                <div class="side-layout">
+                    <div class="side-left">
+                        <div class="card">
+                            <div class="card__avt u-margin-bottom-4 u-margin-top-4">
+                                <img src="img/avt.jpg" alt="">
+                            </div>
+                            <div class="card__content u-margin-bottom-3">
+                                <h2 class="card__name u-margin-bottom-2">Le Xuan Tung</h2>
+                                <p class="card__position">Front-End | Intern</p>
+                            </div>
+                            <div class="card__information">
+                                <div class="card__social">
+                                    <a href="" class="card__social-link">
+                                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="" class="card__social-link">
+                                        <i class="fa fa-google" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="" class="card__social-link">
+                                        <i class="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="main-content">
-                    <!-- section about -->
-                    <section class="section-about" id="section-about">
-                        <!-- introduct -->
-                        <div class="section-about__introduct">
-                            <h2 class="heading-secondary u-margin-bottom-4">ABOUT ME</h2>
-                            <h3 class="heading-tertiary">Helo, I’m Xuan Tung</h3>
-                            <p class="paragraph">
-                                I am talanted florist and decorator. I have graduated from International and cultural university of design and arts. Since first year in high school I relized that nature is most powerfull and beautiful gift in the world. I was captivated by beauty and simplicity of flowers and trees. Since then I have started to create and mastering unique and nice bouquets. My 1st masterpiece was garden of ant Ula Lowe decorated by me
-                            </p>
-                        </div>
-                        <!-- infomation -->
-                        <div class="section-about__information">
-                            <div class="row">
-                                <div class="col-1-of-2">
-                                    <h4 class="heading-fourth u-margin-bottom-2">personal information</h4>
-                                    <ul class="table">
-                                        <li class="table__row">
-                                            <span class="table__col u-text-upper">FULL NAME</span>
-                                            <span class="table__col u-text-100">Le Xuan Tung</span>
-                                         </li>
-                                         <li class="table__row">
-                                            <span class="table__col u-text-upper">D.O.B.</span>
-                                            <span class="table__col u-text-100">09 Oct 1996</span>
-                                         </li>
-                                         <li class="table__row">
-                                            <span class="table__col u-text-upper">ADDRESS</span>
-                                            <span class="table__col u-text-100">Ngoc Khanh, Ba Dinh, Ha Noi </span>
-                                         </li>
-                                         <li class="table__row">
-                                            <span class="table__col u-text-upper">E-MAIL</span>
-                                            <span class="table__col u-text-100">letung.09101996@gmail.com</span>
-                                         </li>
-                                         <li class="table__row">
-                                            <span class="table__col u-text-upper">PHONE</span>
-                                            <span class="table__col u-text-100">+84 968516717</span>
-                                         </li>
+                    <div class="main-content">
+                        <!-- section about -->
+                        <section class="section-about" id="section-about">
+                            <!-- introduct -->
+                            <div class="section-about__introduct">
+                                <h2 class="heading-secondary u-margin-bottom-4">ABOUT ME</h2>
+                                <h3 class="heading-tertiary u-margin-bottom-1">Helo, I’m Xuan Tung</h3>
+                                <p class="paragraph">
+                                    I am talanted florist and decorator. I have graduated from International and
+                                    cultural university of design and arts. Since first year in high school I relized
+                                    that nature is most powerfull and beautiful gift in the world. I was captivated by
+                                    beauty and simplicity of flowers and trees. Since then I have started to create and
+                                    mastering unique and nice bouquets. My 1st masterpiece was garden of ant Ula Lowe
+                                    decorated by me
+                                </p>
+                            </div>
+                            <!-- infomation -->
+                            <div class="section-about__information">
+                                <div class="row">
+                                    <div class="col-1-of-2">
+                                        <h4 class="heading-fourth u-margin-bottom-2">personal information</h4>
+                                        <ul class="table">
+                                            <li class="table__row">
+                                                <span class="table__col u-text-upper">FULL NAME</span>
+                                                <span class="table__col u-text-100">Le Xuan Tung</span>
+                                            </li>
+                                            <li class="table__row">
+                                                <span class="table__col u-text-upper">D.O.B.</span>
+                                                <span class="table__col u-text-100">09 Oct 1996</span>
+                                            </li>
+                                            <li class="table__row">
+                                                <span class="table__col u-text-upper">ADDRESS</span>
+                                                <span class="table__col u-text-100">Ngoc Khanh, Ba Dinh, Ha Noi </span>
+                                            </li>
+                                            <li class="table__row">
+                                                <span class="table__col u-text-upper">E-MAIL</span>
+                                                <span class="table__col u-text-100">letung.09101996@gmail.com</span>
+                                            </li>
+                                            <li class="table__row">
+                                                <span class="table__col u-text-upper">PHONE</span>
+                                                <span class="table__col u-text-100">+84 968516717</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-1-of-2">
+                                        <h4 class="heading-fourth u-margin-bottom-2">Skills</h4>
+                                        <ul class="table">
+                                            <li class="table__row">
+                                                <span class="table__col u-text-upper">HTML5</span>
+                                                <span
+                                                    class="table__col u-text-100 u-inline-flex u-flex-a-cen u-flex-j-cen">
+                                                    <ul class="circle">
+                                                        <li class="circle__item active"></li>
+                                                        <li class="circle__item active"></li>
+                                                        <li class="circle__item active"></li>
+                                                        <li class="circle__item active-half"></li>
+                                                        <li class="circle__item "></li>
+                                                    </ul>
+                                                </span>
+                                            </li>
+                                            <li class="table__row">
+                                                <span class="table__col u-text-upper">CSS3/RES </span>
+                                                <span
+                                                    class="table__col u-text-100 u-inline-flex u-flex-a-cen u-flex-j-cen">
+                                                    <ul class="circle">
+                                                        <li class="circle__item active"></li>
+                                                        <li class="circle__item active"></li>
+                                                        <li class="circle__item active"></li>
+                                                        <li class="circle__item active-half"></li>
+                                                        <li class="circle__item "></li>
+                                                    </ul>
+                                                </span>
+                                            </li>
+                                            <li class="table__row">
+                                                <span class="table__col u-text-upper">JAVASCRIPT</span>
+                                                <span
+                                                    class="table__col u-text-100 u-inline-flex u-flex-a-cen u-flex-j-cen">
+                                                    <ul class="circle">
+                                                        <li class="circle__item active"></li>
+                                                        <li class="circle__item active"></li>
+                                                        <li class="circle__item active-half"></li>
+                                                        <li class="circle__item "></li>
+                                                        <li class="circle__item "></li>
+                                                    </ul>
+                                                </span>
+                                            </li>
+                                            <li class="table__row">
+                                                <span class="table__col u-text-upper">SASS</span>
+                                                <span
+                                                    class="table__col u-text-100 u-inline-flex u-flex-a-cen u-flex-j-cen">
+                                                    <ul class="circle">
+                                                        <li class="circle__item active"></li>
+                                                        <li class="circle__item active"></li>
+                                                        <li class="circle__item active"></li>
+                                                        <li class="circle__item active"></li>
+                                                        <li class="circle__item "></li>
+                                                    </ul>
+                                                </span>
+                                            </li>
+                                            <li class="table__row">
+                                                <span class="table__col u-text-upper">Work management</span>
+                                                <span class="table__col u-text-100">Gitlab, Github, Jira</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- section work-experience -->
+                        <section class="section-work-experience" id="section-work-experience">
+                            <h2 class="heading-secondary u-margin-bottom-4">WORK EXPERIENCE</h2>
+                            <div class="timeline">
+                                <div class="timeline__content">
+                                    <h4 class="heading-fifth u-text-cap u-margin-bottom-2">triển khai phần mềm quản lý
+                                        khách sạn PMS</h4>
+                                    <a href="#" class="timeline__logo">
+                                        <img src="img/ezcloud-logo.png" alt="">
+                                        Công ty Cổ Phần Công Nghệ ezcloud Toàn Cầu
+                                    </a>
+                                    <ul class="timeline__result u-margin-top-2">
+                                        <span class="timeline__title">Kết quả đạt được</span>
+                                        <li class="result__item">
+                                            - Ứng dụng công cụ Jira trong công việc.
+                                        </li>
+                                        <li class="result__item">
+                                            - Kỹ năng xử lý vấn đề với khách tốt.
+                                        </li>
+                                        <li class="result__item">
+                                            - Luôn đạt 200% KPI đề ra.
+                                        </li>
+                                        <li class="result__item">
+                                            - Hiểu về UX sản phẩm, ứng dụng Web - App.
+                                        </li>
                                     </ul>
+                                    <div class="timeline__arrow u-flex u-flex-a-cen u-flex-j-cen">
+                                        <p>Nov 2018 - Fab 2020 </p>
+                                    </div>
                                 </div>
-                                <div class="col-1-of-2">
-                                  <h4 class="heading-fourth u-margin-bottom-2">Skills</h4>
-                                  <ul class="table">
-                                    <li class="table__row">
-                                        <span class="table__col u-text-upper">HTML5</span>
-                                        <span class="table__col u-text-100 u-inline-flex u-flex-a-cen u-flex-j-cen">
-                                            <ul class="circle">
-                                                <li class="circle__item active"></li>
-                                                <li class="circle__item active"></li>
-                                                <li class="circle__item active"></li>
-                                                <li class="circle__item active-half"></li>
-                                                <li class="circle__item "></li>
-                                            </ul>
-                                        </span>
-                                     </li>
-                                     <li class="table__row">
-                                        <span class="table__col u-text-upper">CSS3/RES </span>
-                                        <span class="table__col u-text-100 u-inline-flex u-flex-a-cen u-flex-j-cen">
-                                            <ul class="circle">
-                                                <li class="circle__item active"></li>
-                                                <li class="circle__item active"></li>
-                                                <li class="circle__item active"></li>
-                                                <li class="circle__item active-half"></li>
-                                                <li class="circle__item "></li>
-                                            </ul>
-                                        </span>
-                                     </li>
-                                     <li class="table__row">
-                                        <span class="table__col u-text-upper">JAVASCRIPT</span>
-                                        <span class="table__col u-text-100 u-inline-flex u-flex-a-cen u-flex-j-cen">
-                                            <ul class="circle">
-                                                <li class="circle__item active"></li>
-                                                <li class="circle__item active"></li>
-                                                <li class="circle__item active-half"></li>
-                                                <li class="circle__item "></li>
-                                                <li class="circle__item "></li>
-                                            </ul>
-                                        </span>
-                                     </li>
-                                     <li class="table__row">
-                                        <span class="table__col u-text-upper">SASS</span>
-                                        <span class="table__col u-text-100 u-inline-flex u-flex-a-cen u-flex-j-cen">
-                                            <ul class="circle">
-                                                <li class="circle__item active"></li>
-                                                <li class="circle__item active"></li>
-                                                <li class="circle__item active"></li>
-                                                <li class="circle__item active"></li>
-                                                <li class="circle__item "></li>
-                                            </ul>
-                                        </span>
-                                     </li>
-                                     <li class="table__row">
-                                        <span class="table__col u-text-upper">Work management</span>
-                                        <span class="table__col u-text-100">Gitlab, Github, Jira</span>
-                                     </li>
-                                </ul>
+
+                                <div class="timeline__content">
+                                    <h4 class="heading-fifth u-text-cap u-margin-bottom-2">tư vấn triển khai phần mềm
+                                        nhân sự</h4>
+                                    <a href="#" class="timeline__logo">
+                                        <img src="img/diginet-logo.png" alt="">
+                                        Công ty cổ phẩn DIGINET
+                                    </a>
+                                    <ul class="timeline__result u-margin-top-2">
+                                        <span class="timeline__title">Kết quả đạt được</span>
+                                        <li class="result__item">
+                                            - Có khả năng tiếp nhận yêu cầu, đánh giá và phân tích yêu cầu tính năng của
+                                            khách hàng,
+                                        </li>
+                                        <li class="result__item">
+                                            - Hiểu về UX phần mềm windows.
+                                        </li>
+                                        <div class="timeline__arrow u-flex u-flex-a-cen u-flex-j-cen">
+                                            <p>Apr 2018 - Nov 2018 </p>
+                                        </div>
+                                </div>
+
+                                <div class="timeline__content">
+                                    <h4 class="heading-fifth u-text-cap u-margin-bottom-2">Intern Triển Khai</h4>
+                                    <a href="#" class="timeline__logo">
+                                        <img src="img/logo_BRAVO_1.png" alt="">
+                                        BRAVO
+                                    </a>
+                                    <ul class="timeline__result u-margin-top-2">
+                                        <span class="timeline__title">Kết quả đạt được</span>
+                                        <li class="result__item">
+                                            Nắm bắt các kiến thức cơ bản trong SQL server.
+                                        </li>
+                                        <div class="timeline__arrow u-flex u-flex-a-cen u-flex-j-cen">
+                                            <p>Dev 2017 - Apr 2018 </p>
+                                        </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
 
-                    <!-- section work-experience -->
-                    <section class="section-work-experience" id="section-work-experience">
-                        <h2 class="heading-secondary u-margin-bottom-4">WORK EXPERIENCE</h2>
-                        <div class="timeline">
-                            <div class="timeline__content">
-                                <h4 class="heading-forth u-text-cap u-margin-bottom-2">triển khai phần mềm quản lý khách sạn PMS</h4>
-                                <a href="#" class="timeline__logo">
-                                    <img src="img/ezcloud-logo.png" alt="">
-                                    Công ty Cổ Phần Công Nghệ ezcloud Toàn Cầu
-                                </a>
-                                <ul class="timeline__result u-margin-top-2">
-                                    <span class="timeline__title">Kết quả đạt được</span>
-                                    <li class="result__item">
-                                        - Ứng dụng công cụ Jira trong công việc.
+                        <!-- section portfolio -->
+                        <section class="section-portfolio" id="section-portfolio">
+                            <h2 class="heading-secondary u-margin-bottom-4">Portfolio</h2>
+                            <!-- tabs -->
+                            <nav class="nav-tab u-margin-bottom-4">
+                                <ul class="nav-tab__list">
+                                    <li class="nav-tab__item">
+                                        <a href="" class="nav-tab__link active" data-active="">All</a>
                                     </li>
-                                    <li class="result__item">
-                                        - Kỹ năng xử lý vấn đề với khách tốt.
+                                    <li class="nav-tab__item">
+                                        <a href="" class="nav-tab__link ">Single page</a>
                                     </li>
-                                    <li class="result__item">
-                                        - Luôn đạt 200% KPI đề ra.
+                                    <li class="nav-tab__item">
+                                        <a href="" class="nav-tab__link">Multi page</a>
                                     </li>
-                                    <li class="result__item">
-                                        - Hiểu về UX sản phẩm, ứng dụng Web - App.
+                                    <li class="nav-tab__item">
+                                        <a href="" class="nav-tab__link">App</a>
                                     </li>
                                 </ul>
-                                <div class="timeline__arrow u-flex u-flex-a-cen u-flex-j-cen">
-                                    <p>Nov 2018 - Fab 2020 </p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline__content">
-                                <h4 class="heading-forth u-text-cap u-margin-bottom-2">tư vấn triển khai phần mềm nhân sự</h4>
-                                <a href="#" class="timeline__logo">
-                                    <img src="img/diginet-logo.png" alt="">
-                                    Công ty cổ phẩn DIGINET
-                                </a>
-                                <ul class="timeline__result u-margin-top-2">
-                                    <span class="timeline__title">Kết quả đạt được</span>
-                                    <li class="result__item">
-                                        - Có khả năng tiếp nhận yêu cầu, đánh giá và phân tích yêu cầu tính năng của khách hàng,
-                                    </li>
-                                    <li class="result__item">
-                                        - Hiểu về UX phần mềm windows.
-                                    </li>
-                                <div class="timeline__arrow u-flex u-flex-a-cen u-flex-j-cen">
-                                    <p>Apr 2018 - Nov 2018 </p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__content">
-                                <h4 class="heading-forth u-text-cap u-margin-bottom-2">Intern Triển Khai</h4>
-                                <a href="#" class="timeline__logo">
-                                    <img src="img/logo_BRAVO_1.png" alt="">
-                                    BRAVO
-                                </a>
-                                <ul class="timeline__result u-margin-top-2">
-                                    <span class="timeline__title">Kết quả đạt được</span>
-                                    <li class="result__item">
-                                        Nắm bắt các kiến thức cơ bản trong SQL server.
-                                    </li>
-                                <div class="timeline__arrow u-flex u-flex-a-cen u-flex-j-cen">
-                                    <p>Dev 2017 - Apr 2018 </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- section portfolio -->
-                    <section class="section-portfolio" id="section-portfolio">
-                        <h2 class="heading-secondary u-margin-bottom-4">Portfolio</h2>
-                        <div class="row u-margin-bottom-8">
-                            <div class="col-1-of-2">
-                                <h3 class="heading-fifth u-margin-top-3">POFO | CREATIVE | SINGLE PAGE</h3>
-                                <p class="paragraph">USE: HTML5/CSS3/JS/SASS</p>
-                            </div>
-
-                            <div class="col-1-of-2">
-                                <div class="portfolio">
-                                    <div class="portfolio__img">
-                                        <img src="img/portfolio-1.jpg" alt="">
-                                        <div class="overlay overlay--img u-flex u-flex-a-cen u-flex-j-cen">  
+                            </nav>
+                            <div class="portfolio">
+                                <!-- all portfolio -->
+                                <div class="tab-content active">
+                                    <div class="portfolio__item">
+                                        <div class="portfolio__content">
+                                            <h3 class="heading-sixth">POFO | CREATIVE |</h3>
+                                            <p class="paragraph">Use: HTML5/CSS3/SASS/JAVASCRIPT</p>
                                         </div>
-                                        <a href="https://fox19960910.github.io/pofoCreative/tung23022020/index.html" class="heading-fifth portfolio__img-text" target="_blank">Preview</a>
+                                        <div class="portfolio__img">
+                                           <a href="kenh14.vn"><img src="img/portfolio-1.jpg" alt=""></a>
+                                            <div class="overlay"></div>
+                                            <p class="portfolio__text">PREVIEW</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="portfolio__item">
+                                        <div class="portfolio__content">
+                                            <h3 class="heading-sixth">HOHOHOH |</h3>
+                                            <p class="paragraph">Use: HTML5/CSS3/SASS/JAVASCRIPT</p>
+                                        </div>
+                                        <div class="portfolio__img">
+                                            <img src="img/portfolio-2.jpg" alt="">
+                                            <div class="overlay"></div>
+                                            <p class="portfolio__text">PREVIEW</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="portfolio__item">
+                                        <div class="portfolio__content">
+                                            <h3 class="heading-sixth">HOHOHOH |</h3>
+                                            <p class="paragraph">Use: HTML5/CSS3/SASS/JAVASCRIPT</p>
+                                        </div>
+                                        <div class="portfolio__img">
+                                            <img src="img/portfolio-3.png" alt="">
+                                            <div class="overlay"></div>
+                                            <p class="portfolio__text">PREVIEW</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- singel page portfolio -->
+                                <div class="tab-content">
+                                    <div class="portfolio__item">
+                                        <div class="portfolio__content">
+                                            <h3 class="heading-sixth">POFO | CREATIVE |</h3>
+                                            <p class="paragraph">Use: HTML5/CSS3/SASS/JAVASCRIPT</p>
+                                        </div>
+                                        <div class="portfolio__img">
+                                            <img src="img/portfolio-1.jpg" alt="">
+                                            <div class="overlay"></div>
+                                            <p class="portfolio__text">PREVIEW</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- multi page portfolio -->
+                                <div class="tab-content">
+                                    <div class="portfolio__item">
+                                        <div class="portfolio__content">
+                                            <h3 class="heading-sixth">HOHOHOH |</h3>
+                                            <p class="paragraph">Use: HTML5/CSS3/SASS/JAVASCRIPT</p>
+                                        </div>
+                                        <div class="portfolio__img">
+                                            <img src="img/portfolio-2.jpg" alt="">
+                                            <div class="overlay"></div>
+                                            <p class="portfolio__text">PREVIEW</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- app portfolio -->
+                                <div class="tab-content">
+                                    <div class="portfolio__item">
+                                        <div class="portfolio__content">
+                                            <h3 class="heading-sixth">HOHOHOH |</h3>
+                                            <p class="paragraph">Use: HTML5/CSS3/SASS/JAVASCRIPT</p>
+                                        </div>
+                                        <div class="portfolio__img">
+                                            <img src="img/portfolio-3.png" alt="">
+                                            <div class="overlay"></div>
+                                            <p class="portfolio__text">PREVIEW</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row u-margin-bottom-3">
-                            <div class="col-1-of-2">
-                                <div class="portfolio">
-                                    <div class="portfolio__img">
-                                        <img src="img/portfolio-2.jpg" alt="">
-                                        <div class="overlay overlay--img u-flex u-flex-a-cen u-flex-j-cen">  
-                                        </div>
-                                        <a href="https://fox19960910.github.io/pofoCreative/Stockhomlm/index.html" class="heading-fifth portfolio__img-text" target="_blank">Preview</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-1-of-2">
-                                <h3 class="heading-fifth u-margin-top-3">STOCKHOLM | MULTI PAGE</h3>
-                                <p class="paragraph">USE: HTML5/CSS3/JS/SASS</p>
-                            </div>
 
-                            
-                        </div>
-                        <div class="row">
-                            <div class="col-1-of-2">
-                                <h3 class="heading-fifth u-margin-top-3">STOCKMANAGER | APP</h3>
-                                <p class="paragraph">USE: HTML5/CSS3/JS/SASS</p>
-                            </div>
-
-                            <div class="col-1-of-2">
-                                <div class="portfolio">
-                                    <div class="portfolio__img">
-                                        <img src="img/portfolio-3.png" alt="">
-                                        <div class="overlay overlay--img u-flex u-flex-a-cen u-flex-j-cen">  
-                                        </div>
-                                        <a href="https://fox19960910.github.io/pofoCreative/stock/index.html" class="heading-fifth portfolio__img-text" target="_blank">Preview</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- side right -->
-                <div class="side-right">
-                   <nav class="nav-scroll">
-                       <ul class="nav-scroll__list">
-                           <li class="nav-scroll__item">
-                               <a href="#section-about" class="nav-scroll__link nav-scroll__logo">
-                                   <img src="img/avt.jpg" alt="">
-                               </a>
-                            </li>
-                            <li class="nav-scroll__item">
-                                <a href="#section-work-experience" class="nav-scroll__link ">
-                                    <span class="nav-scroll__link-arrow nav-scroll__link-arrow-left">Experience</span>
-                                    <i class="fa fa-briefcase" aria-hidden="true"></i>
-                                </a>
-                             </li>
-                             <li class="nav-scroll__item">
-                                <a href="#section-portfolio" class="nav-scroll__link ">
-                                    <span class="nav-scroll__link-arrow nav-scroll__link-arrow-right">Portfolio</span>
-                                    <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                </a>
-                             </li>
-                             <li class="nav-scroll__item">
-                                <a href="" class="nav-scroll__link ">
-                                    <span class="nav-scroll__link-arrow nav-scroll__link-arrow-left">Contact</span>
-                                    <i class="fa fa-address-card" aria-hidden="true"></i>
-                                </a>
-                             </li>
-                       </ul>
-                   </nav>
+                        </section>
+                    </div>
+                    <!-- side right -->
+                    <div class="side-right">
+                        <nav class="nav-scroll">
+                            <ul class="nav-scroll__list">
+                                <li class="nav-scroll__item">
+                                    <a href="#section-about" class="nav-scroll__link nav-scroll__logo">
+                                        <img src="img/avt.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="nav-scroll__item">
+                                    <a href="#section-work-experience" class="nav-scroll__link ">
+                                        <span
+                                            class="nav-scroll__link-arrow nav-scroll__link-arrow--left">Experience</span>
+                                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-scroll__item">
+                                    <a href="#section-portfolio" class="nav-scroll__link ">
+                                        <span
+                                            class="nav-scroll__link-arrow nav-scroll__link-arrow--right">Portfolio</span>
+                                        <i class="fa fa-folder-open" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-scroll__item">
+                                    <a href="" class="nav-scroll__link ">
+                                        <span class="nav-scroll__link-arrow nav-scroll__link-arrow--left">Contact</span>
+                                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
 
+    </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>
