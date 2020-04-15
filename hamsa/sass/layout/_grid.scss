@@ -11,6 +11,9 @@
     @include screen(tab-portrait){
         width:$grid-width-tab-p;
     }
+    @include screen(tab-phone){
+        width:30rem;
+    }
 }
 .row{
     @include clearfix;
@@ -23,7 +26,13 @@
 }
 .col-1-of-2{
     width: calc(100%/2);
+    // @include screen(tab-portrait){
+    //     width:100%;
+    // }
 }
 .col-1-of-3{
     width: calc(100%/3);
+    @include screen(tab-portrait){
+        width:50%;
+    }
 }

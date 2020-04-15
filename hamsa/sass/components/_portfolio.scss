@@ -19,12 +19,18 @@
         @include screen(tab-landscape){
             margin-bottom:10rem;
         }
+        @include screen(tab-portrait){
+            margin-bottom:8rem;
+        }
     }
     &--sub{
         font-size:10rem;
         letter-spacing: 5px;
         display: block;
         @include screen(tab-landscape){
+            font-size:8rem;
+        }
+        @include screen(tab-portrait){
             font-size:6rem;
         }
         @include screen(phone){
@@ -36,6 +42,9 @@
         letter-spacing: 10px;
         display: block;
         @include screen(tab-landscape){
+            font-size:10rem;
+        }
+        @include screen(tab-portrait){
             font-size:8rem;
         }
         @include screen(phone){
@@ -44,7 +53,16 @@
     }
 }
 .wrap-text-portfolio{
+    overflow: hidden;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    padding:10rem 5rem;
+    background:$color-primary;
     @include screen(tab-landscape){
-        padding: 3rem 3.5rem;
+        padding: 8rem 4rem;
     }
 }
+
