@@ -1,0 +1,29 @@
+.logo{
+    &-shape{
+        display: block;
+        width:7rem;
+        height:7rem;
+        border: 0.6rem solid $color-secondary;
+        position: relative;
+        &::before{
+            content:"";
+            position: absolute;
+            width:3.2rem;
+            height:3.2rem;
+            border:0.6rem solid $color-primary;
+            top:50%;
+            left:-50%;
+            transform:translate(30%,-50%);
+        }
+    }
+    &-text{
+        display: block;
+        font-size:3rem;
+        color: #000;
+        text-transform: capitalize;
+        position: absolute;
+        font-weight: 900;
+        top:50%;
+        transform:translate(2.5rem,-50%);
+    }
+}

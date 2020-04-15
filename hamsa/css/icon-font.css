@@ -1,0 +1,8 @@
+@font-face{
+    font-family: 'bisonbold';
+    src: url('../font/bison-bold-webfont.woff2') format('woff2'),
+         url('../font/bison-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}

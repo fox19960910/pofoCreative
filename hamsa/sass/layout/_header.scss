@@ -1,0 +1,13 @@
+.header{
+    height:90vh;
+    background-image:linear-gradient(to right, $color-secondary 0%,$color-secondary 50%, $color-primary 50%);
+    position: relative;
+}
+.logo{
+    @include center;
+    -webkit-filter: drop-shadow(-8px 75px 30px #000000);
+    filter: drop-shadow(-8px 75px 30px #000000);
+    @include screen(tab-portrait){
+        width:80%;
+    }
+}

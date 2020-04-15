@@ -1,0 +1,29 @@
+.container-fluid{
+    width:100%;
+    margin:0 auto;
+}
+.container{
+    width:$grid-width-desk;
+    margin:0 auto;
+    @include screen(tab-landscape){
+        width:$grid-width-tab-l;
+    }
+    @include screen(tab-portrait){
+        width:$grid-width-tab-p;
+    }
+}
+.row{
+    @include clearfix;
+}
+[class^="col-"]{
+    float:left;
+}
+.col-1-of-1{
+    width: 100%;
+}
+.col-1-of-2{
+    width: calc(100%/2);
+}
+.col-1-of-3{
+    width: calc(100%/3);
+}

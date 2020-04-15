@@ -1,0 +1,41 @@
+.btn {
+    width:44.5rem;
+    font-size:2.8rem;
+    padding: 2rem ;
+    text-transform: uppercase;
+    border-radius:10px;
+    display: inline-block;
+    @include screen(tab-landscape){
+        width:40rem;
+    }
+    @include screen(tab-portrait){
+        width:28rem;
+        font-size:2rem;
+    }
+    @include screen(phone){
+        width:20rem;
+        padding:1rem 2rem;
+        font-size:1.6rem;
+    }
+    &:not(:last-child){
+        margin-right:3rem;
+        @include screen(phone){
+            margin-right:2rem;
+        }
+    }
+    &--normal{
+    border:thin solid #fff;
+    color:#fff;
+    transition: $transition-3s;
+    &:hover{
+        border:thin solid $color-primary;
+        background-color:$color-primary;
+        color:$color-secondary;
+    }
+    }
+    &--primary{
+        border:thin solid $color-primary;
+        background-color:$color-primary;
+        color:$color-secondary;
+    }
+}

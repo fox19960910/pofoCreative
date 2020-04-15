@@ -1,0 +1,15 @@
+.social-link{
+    display: inline-block;
+    width:4rem;
+    height:4rem;
+    color:#000;
+    background-color: $color-primary;
+    border-radius:50%;
+    text-align: center;
+    line-height: 4rem;
+    margin-left:1rem;
+    margin-right:1rem;
+    i{
+        font-size:1.6rem;
+    }
+}

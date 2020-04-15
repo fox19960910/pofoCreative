@@ -1,0 +1,39 @@
+.u-center-text{
+    text-align: center;
+}
+.u-text-upper{
+    text-transform: uppercase;
+}
+.u-text-cap{
+    text-transform: capitalize;
+}
+.u-text-100{
+    font-weight: 100;
+}
+@for $i from 1 through 10 {
+    .u-margin-bottom-#{$i}{
+        margin-bottom:#{$i}rem;
+    }
+    .u-margin-top-#{$i}{
+        margin-top:#{$i}rem;
+    }
+    .u-padding-left-#{$i}{
+        padding-left:#{$i}rem;
+    }
+    .u-padding-right-#{$i}{
+        padding-right:#{$i}rem;
+    }
+}
+.u-padding-top-bottom-20{
+    padding: 20rem 0;
+}
+//color
+.u-grey-bg{
+    background-color: $color-grey-light;
+}
+.u-text-color-dark{
+    color:$color-dark;
+}
+.u-text-color-light{
+    color:$color-white;
+}
