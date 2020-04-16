@@ -1,0 +1,12 @@
+.best{
+    flex:0 0 50%;
+    max-width: 50%;
+    padding: 3rem 4rem 3rem 7rem;
+    @include screen(tab-portrait){
+        flex:0 0 100%;
+    max-width: 100%;
+    }
+    @include screen(phone){
+      padding: 4rem 2rem;
+    }
+} 

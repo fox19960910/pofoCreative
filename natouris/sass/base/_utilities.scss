@@ -1,0 +1,18 @@
+.u-center-text{
+    text-align: center;
+}
+@for $i from 1 through 10 {
+    .u-margin-bottom-#{$i}{
+        margin-bottom:#{$i}rem;
+    }
+    .u-margin-top-#{$i}{
+        margin-top:#{$i}rem;
+    }
+}
+.u-padding-top-bottom-20{
+    padding: 20rem 0;
+}
+//color
+.u-grey-bg{
+    background-color: $color-grey-light;
+}

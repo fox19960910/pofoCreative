@@ -1,0 +1,17 @@
+.member{
+    text-align: center;
+    padding: 2rem 4rem;
+    @include screen(tab-landscape){
+        padding: 2rem 2rem;
+    }
+    &__avt{
+        width:50%;
+        margin:0 auto;
+        @include screen(phone){
+            width:30%;
+        }
+        img{
+            width:100%;
+        }
+    }
+}

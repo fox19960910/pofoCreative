@@ -1,0 +1,21 @@
+.footer{
+    padding:2rem;
+    background-color:$color-secondary;
+    &__link{
+        color:#fff;
+        padding-left:1rem;
+        padding-right:1rem;
+        transition: $transition-3s;
+        &:hover{
+            color:$color-primary
+        }
+    }
+}
+.copy{
+    font-size:1.6rem;
+    flex:1;
+    color:#fff;
+    span{
+        color:$color-primary;
+    }
+}

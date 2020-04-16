@@ -1,0 +1,46 @@
+.modal{
+    box-shadow: 0 1.5rem 4rem rgba(#000,0.3);
+    position: fixed;
+    // height:50vh;
+    top:50%;
+    left: 50%;
+    width: 0;
+    transform: translate(-50%,-50%);
+    background-color:$color-white;
+    z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: 0.4s;
+    @include screen(phone){
+       padding:3rem;
+    }
+    &__img{
+        @include screen(tab-portrait){
+            display: flex;
+            justify-content: center;
+            margin-bottom:-6rem;
+        }
+        img{
+            width:100%;
+            @include screen(tab-portrait){
+                width:50%;
+            }
+        }
+    }
+    &__text{
+        padding: 0 3rem 3rem 0;
+    }
+    &.active{
+        opacity: 1;
+        width:80%;
+        visibility: visible;
+    }
+    &__btn-x{
+        position: absolute;
+        top:3rem;
+        right:3rem;
+        text-decoration: none;
+        color:#000;
+    }
+}

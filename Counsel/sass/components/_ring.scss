@@ -1,0 +1,74 @@
+.ring{
+    display: flex;
+    justify-content: flex-end;
+    @include screen(tab-portrait){
+        justify-content: center;
+        align-items: center;
+    }
+    @include screen(phone){
+       margin-left:3rem;
+    }
+    &__shape{
+            position: relative;
+            width:30rem;
+            height:38rem;
+            border: 1rem solid $color-primary;
+            border-left:none;
+            @include screen(tab-portrait){
+                width:25rem;
+                height:33rem;
+            }
+            &::after,&::before,&-line{
+                content:"";
+                position: absolute;
+                width:1.1rem;
+                background:$color-primary;
+                left: -9px;
+                z-index: 1;
+                @include screen(tab-portrait){
+                    left: -8px;
+                }
+            }
+            &::after{
+                height:30%;
+                top: -1rem;
+            }
+            &::before{
+                height:10%;
+                bottom:-1rem
+            }
+            &-line{
+                height: 7%;
+                bottom: 7.2rem;
+            }
+    }
+    &__text{
+        font-size: 5.1rem;
+        text-align: end;
+        line-height: 1;
+        background: transparent;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -62%;
+        display: inline-block;
+        width: 30rem;
+        z-index:2;
+        @include screen(tab-portrait){
+           font-size:4.1rem;
+           left:-72%;
+        }
+    }
+    &__link{
+        font-size:2.1rem;
+        font-weight: 500;
+        color:$color-primary;
+        text-transform:uppercase;
+        border-bottom:1px solid $color-primary;
+        position: absolute;
+        top: 85%;
+        transform: translateY(-50%);
+        left: -28%;
+        z-index:2;
+    }
+}

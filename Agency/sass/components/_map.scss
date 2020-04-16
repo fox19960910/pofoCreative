@@ -1,0 +1,15 @@
+.map{
+    position: relative;
+    width:100%;
+    &__background{
+        width:100%;
+    }
+    &__location{
+        position: absolute;
+        width:2rem;
+        height:auto;
+        display: block;
+        left:50%;
+        bottom:45%;
+    }
+}

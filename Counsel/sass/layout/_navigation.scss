@@ -1,0 +1,116 @@
+.nav-head{
+    flex:1;
+    @include screen(tab-portrait){
+        display: none;
+    }
+   &__list{
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+   }
+   &__item{
+       &:not(:last-child){
+           margin-right:0.5rem;
+       }
+   }
+   &__link{
+       color:$color-white;
+       font-size:1.4rem;
+       display: inline-block;
+       text-transform: uppercase;
+       padding:0.5rem 2rem;
+       font-weight: 500;
+       letter-spacing: 1px;
+       &:last-child{
+           padding-right:0;
+       }
+       &.active{
+            border:1px solid $color-grey-light;
+            border-radius:20rem;
+       }
+       &--language{
+           display: inline-flex;
+           position: relative;
+           &::after{
+                content:"";
+                width:0;
+                height:0;
+                position: absolute;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #fff;
+                right:-3px;
+                top:50%;
+                transform: translateY(-50%);
+           }
+       }
+   }
+}
+.nav-bar{
+    display: none;
+    @include screen(tab-portrait){
+        display: block;
+    }
+    &__btn{
+        width:4rem;
+        height:4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        i{
+            font-size:2.5rem;
+        }
+    }
+
+}
+.nav-responsive{
+    position: fixed;
+    width:0;
+    height:100vh;
+    background-color:$color-secondary;
+    right:0;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: $transition-3s;
+    z-index:2;
+    &__exit{
+        position: absolute;
+        right:3rem;
+        top:2rem;
+        color:$color-primary;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:5rem;
+    }
+    &__item{
+        padding:1.5rem 0;
+        width:80%;
+        text-align: center;
+        &:not(:last-child){
+        border-bottom:0.5px solid $color-primary;
+       }
+    }
+    &__link{
+        
+        &,&:link,&:visited{
+            color:$color-primary;
+            transition: $transition-3s;
+            display: block;
+        }
+        &:hover{
+            transform: translateX(-2rem);
+        }
+    }
+    &.active{
+        width:40%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+}

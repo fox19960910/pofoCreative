@@ -1,0 +1,42 @@
+.side-layout{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    @include screen(tab-portrait){
+        flex-direction: column;
+    }
+}
+.side-right{
+    @include screen(tab-portrait){
+       order:1;
+    }
+}
+.side-left{
+    @include screen(tab-portrait){
+       order:2;
+    }
+}
+.main-content{
+    width:108rem;
+    margin-left:-29rem;
+    padding-left:33rem;
+    @include screen(tab-landscape){
+        width:89rem;
+    }
+    &.stickey{
+        margin-left:0;
+        @include screen(tab-landscape){
+            margin-left:-4rem;
+        }
+        @include screen(tab-portrait){
+             margin-left:0;
+    
+         }
+    }
+    @include screen(tab-portrait){
+        order:3;
+        width:100%;
+        margin-left:0;
+        padding-left:0;
+    }
+}

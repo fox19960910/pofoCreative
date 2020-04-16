@@ -1,0 +1,25 @@
+.section-banner{
+    background-image: linear-gradient(to bottom, rgba(247, 247, 247, 0.5), transparent),url(../img/hero-large.png);
+    height:100vh;
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+    top:0;
+    left:0;
+    padding-top:22rem;
+}
+.section-best{
+    background-image: url(../img/best.jpg);
+    height: 60vh;
+    @include screen(tab-portrait){
+        height: 100vh;
+    }
+}
+.section-feature{
+    padding: 10rem 0;
+    background-color:$color-white;
+}
+.section-aboutus{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/banner-about-us.jpg);
+    padding: 10rem 0;
+}

@@ -1,0 +1,24 @@
+.product{
+    cursor: pointer;
+    position: relative;
+    &__content{
+        position: absolute;
+        top:50%;
+        left:50%;
+        width:85%;
+        transform: translate(-50%,0);
+        opacity: 0;
+        transition: $transition-3s;
+        z-index:2;
+    }
+    img{
+        width:100%;
+    }
+    &:hover .overlay{
+        opacity: 0.7;
+    }
+    &:hover &__content{
+        opacity: 1;
+        transform: translate(-50%,-50%);
+    }
+}

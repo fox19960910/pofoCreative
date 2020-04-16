@@ -1,0 +1,35 @@
+.coposition{
+  &__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 100%;
+    }
+  }
+  
+}
+.image{
+  width:50rem;
+  height:30rem;
+  background-color:$color-grey-light-2;
+}
+.line-bg{
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    width:40%;
+    height:300%;
+    background-color:$color-primary;
+    top:-50%;
+    right:50%;
+    transform: translateX(50%);
+    z-index:-1;
+    @include screen(tab-portrait){
+      height:400%;
+      top:-200%;
+
+   }
+  }
+} 

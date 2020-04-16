@@ -1,0 +1,16 @@
+.service{
+    font-size:2rem;
+}
+.s-image{
+    width:37rem;
+    height:19rem;
+    &--1{
+        background-color:$color-tertiary-1;
+    }
+    &--2{
+        background-color:$color-tertiary-2;
+    }
+    &--3{
+        background-color:$color-tertiary-3;
+    }
+}

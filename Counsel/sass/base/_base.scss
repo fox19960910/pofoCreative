@@ -1,0 +1,39 @@
+
+/* general setting */
+*,
+*:after,
+*:before{
+    padding: 0;
+    margin:0;
+    box-sizing: inherit;
+}
+html{
+    scroll-behavior:smooth;
+    font-size:62.5%;
+    @include screen(big-desktop){
+        font-size:75%;
+    }
+    @include screen(tab-landscape){
+        font-size:56.25%;
+    }
+    @include screen(tab-portrait){
+        font-size:50%;
+    }
+    @include screen(phone){
+        font-size:46.25%;
+    }
+   
+   
+}
+body{
+    box-sizing: border-box;
+    @include screen(phone){
+        padding:0;
+    }
+}
+ul{
+    list-style-type: none;
+}
+a,a:link,a:visited{
+    text-decoration: none;
+}

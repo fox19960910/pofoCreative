@@ -518,6 +518,17 @@ body {
   height: 90vh;
   background-image: linear-gradient(to right, #000000 0%, #000000 50%, #fdcd07 50%);
   position: relative; }
+  .header-left, .header-right {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%; }
+  .header-left {
+    left: 0;
+    background-color: #000000; }
+  .header-right {
+    right: 0;
+    background-color: #fdcd07; }
 
 .logo {
   position: absolute;
@@ -525,7 +536,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-filter: drop-shadow(-8px 75px 30px #000000);
-  filter: drop-shadow(-8px 75px 30px #000000); }
+  filter: drop-shadow(-8px 75px 30px #000000);
+  -ms-transform: translate(-50%, -50%); }
 
 .section-about {
   background-color: #000000;

@@ -1,0 +1,73 @@
+.u-center-text{
+    text-align: center;
+}
+.u-text-upper{
+    text-transform: uppercase;
+}
+.u-text-cap{
+    text-transform: capitalize;
+}
+.u-text-100{
+    font-weight: 100;
+}
+@for $i from 1 through 10 {
+    .u-margin-bottom-#{$i}{
+        margin-bottom:#{$i}rem;
+    }
+    .u-margin-top-#{$i}{
+        margin-top:#{$i}rem;
+    }
+}
+.u-padding-top-bottom-20{
+    padding: 20rem 0;
+}
+//color
+.u-grey-bg{
+    background-color: $color-grey-light;
+}
+.u-text-color-dark{
+    color:$color-dark;
+}
+.u-text-color-light{
+    color:$color-white;
+}
+//flex
+.u-flex{
+    display: flex;
+}
+.u-inline-flex{
+    display: inline-flex;
+}
+.u-flex-wrap{
+    flex-wrap: wrap;
+}
+.u-flex-no-wrap{
+    flex-wrap: nowrap;
+}
+.u-justify-content-center{
+    justify-content: center;
+}
+.u-justify-content-start{
+    justify-content: flex-start;
+}
+.u-justify-content-end{
+    justify-content: flex-end;
+}
+.u-justify-content-between{
+    justify-content: space-between;
+}
+.u-justify-content-around{
+    justify-content: space-around;
+}
+.u-align-item-center{
+    align-items: center;
+}
+.u-align-item-start{
+    align-items: flex-start;
+}
+.u-align-item-end{
+    align-items: flex-end;
+}
+.u-flex-1{
+    flex:1;
+}

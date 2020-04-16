@@ -1,0 +1,39 @@
+.contact{
+    box-shadow: $shadow-light;
+    color:$color-secondary;
+    &__content{
+        padding-bottom:4rem;
+        padding-left:3.5rem;
+        padding-right:15rem;
+        @include screen(tab-landscape){
+            padding-left:2rem;
+            padding-right:2rem;
+        }
+    }
+    &__item{
+       
+        display: flex;
+        align-items: center;
+        span{
+            margin-left:2rem;
+            @include screen(tab-landscape){
+                margin-left:1.5rem;
+            }
+        }
+        &:not(:last-child){
+            margin-bottom:2rem;
+        }
+    }
+    img{
+        width:100%;
+    }
+    &__img{
+        position: relative;
+    }
+    &-location{
+        position: absolute;
+        width:4rem !important;
+        left: 44%;
+        top: 50%;
+    }
+}

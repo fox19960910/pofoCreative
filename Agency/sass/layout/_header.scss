@@ -1,0 +1,16 @@
+.header{
+    padding: 4rem 0;
+    position: absolute;
+    width:100%;
+    z-index:5;
+}
+.logo{
+    
+    &-link{
+        display: block;
+        width:20rem;
+        img{
+            width:100%;
+        }
+    }
+}

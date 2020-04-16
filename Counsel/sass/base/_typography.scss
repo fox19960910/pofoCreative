@@ -1,0 +1,86 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size:$default-font-size;
+    line-height: 1.7;
+    color:#fff;
+    
+}
+// heading
+.heading-primary{
+    text-transform: capitalize;
+    backface-visibility: hidden; /*giup fix loi shakeky khi animation main va sub */
+    margin-bottom:6rem;
+    line-height: 1.2;
+
+    &--main{
+        display:block;
+        font-size:4.8rem;
+        font-weight:700;
+        color:$color-dark;
+        @include screen(phone){
+            font-size:3.2rem;
+        }
+        // animation-name: moveInLeft;
+        // animation-duration: 1.25s;
+        // animation-timing-function: ease-out;
+    }
+    &--sub{
+        font-size:1.8rem;
+        color:$color-grey-light;
+        font-weight: 300;
+        @include screen(phone){
+            font-size:1.5rem;
+        }
+    }
+    
+    
+}
+.heading-secondary{
+    font-size:3.1rem;
+    text-transform: uppercase;
+    color:$color-secondary;
+    line-height: 1.2;
+    @include screen(phone){
+        font-size:2.8rem;
+    }
+    &--sub{
+        font-size:2.1rem;
+    }
+    &--tiny{
+        font-size:1.6rem;
+    }
+}
+
+.heading-tertiary{
+    font-size:4rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    &--sub{
+        font-weight: 100;
+    }
+}
+.heading-fourth{
+    font-size:2.5rem;
+    font-weight:400;
+    color:#bcbcbc;
+    text-transform: capitalize;
+    @include screen(tab-landscape){
+        font-size:2rem;
+    }
+}
+.heading-fifth{
+    font-size:1.8rem;
+    font-weight:700;
+}
+.paragraph{
+    font-size:1.6rem;
+    font-weight: 300;
+    color:$color-grey-dark;
+    &--big{
+        color:$color-grey-dark-2;
+        font-size:2.1rem;
+        line-height: 1.2;
+    }
+   
+}

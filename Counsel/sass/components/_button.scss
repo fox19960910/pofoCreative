@@ -1,0 +1,17 @@
+.btn{
+    display: inline-block;
+    color:$color-secondary;
+    font-size:1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: $transition-3s;
+    border-bottom:1px solid $color-secondary;
+    &:hover{
+        transform: translateX(2rem);
+    }
+    &--primary{
+        border: none;
+        background-color:$color-primary;
+        padding:1rem 2rem;
+    }
+}

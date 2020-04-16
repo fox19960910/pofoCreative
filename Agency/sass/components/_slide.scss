@@ -1,0 +1,42 @@
+.slide{
+    position: relative;
+    &-container{
+        display: flex;
+        @include screen(tab-portrait){
+            flex-wrap: nowrap;
+            overflow: hidden;
+        }
+    }
+    &-item{
+        flex: 0 0 33.3333%;
+        max-width:33.3333%;
+        @include screen(tab-portrait){
+            flex: 0 0 100%;
+            max-width:100%;
+        }
+    }
+    &-btn-next,
+    &-btn-prev{
+        position: absolute;
+        width:4rem;
+        height:4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:50%;
+        transform: translateY(-50%);
+        background-color:#fff;
+        z-index:5;
+        cursor: pointer;
+        i{
+            color:#000;
+            font-size:2rem;
+        }
+    }
+    &-btn-next{
+        right:0;
+    }
+    &-btn-prev{
+        left:0;
+    }
+}

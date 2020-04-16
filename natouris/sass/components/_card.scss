@@ -1,0 +1,164 @@
+.card{
+    perspective: 150rem;
+    -moz-perspective:150rem ;
+    position: relative;
+    height: 50rem;
+    
+    &__side{
+        height:50rem;
+        width:100%;
+        transition: all 0.8s;
+        position: absolute;
+        top:0;
+        left:0;
+        backface-visibility: hidden;
+        border-radius:5px;
+        box-shadow: 0 1.5rem 4rem rgba(#000,0.15);
+        overflow: hidden;
+        &--front{
+            background-color:$color-white;
+        }
+        &--back{
+            transform: rotateY(180deg);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            &-1{
+                background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark)
+            }
+            &-2{
+                background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark)
+            }
+            &-3{
+                background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark)
+            }
+        }
+    }
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+
+    //STYLING FRONT
+    &__img{
+        height:23rem;
+        background-size:cover;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        &--1{
+            background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark)
+            ,url(../img/nat-5.jpg);
+        }
+        &--2{
+            background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark)
+            ,url(../img/nat-6.jpg);
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark)
+            ,url(../img/nat-7.jpg);
+        }
+    }
+    &__heading{
+        font-size:2.8rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        color:$color-white;
+        display:inline-block;
+        position: absolute;
+        padding:0.8rem;
+        &--1{
+            right:1rem;
+            top:10rem;
+        }
+        &--2{
+            right:1rem;
+            top:15rem;
+        }
+        &--secondary{
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light,0.8),rgba($color-secondary-dark,0.8));
+        }
+        &--primary{
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light,0.8),rgba($color-primary-dark,0.8));
+        }
+        &--tertiary{
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light,0.8),rgba($color-tertiary-dark,0.8));
+        }
+    }
+    &__details{
+        padding:2rem 0;
+        ul{
+            list-style-type: none;
+            width: 80%;
+            text-align: center;
+            margin:0 auto;
+            li{
+                padding:1rem;
+                font-size:1.5rem;
+
+                &:not(:last-child){
+                    border-bottom:1px solid #eee;
+                }
+            }
+        }
+    }
+
+    //STYLING BACK
+    &__cta{
+        text-align: center;
+    }
+    &__price-box{
+        color:$color-white;
+    }
+    &__price-only{
+        font-size:1.4rem;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    &__price-value{
+        font-size:6rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    
+
+
+   @media only screen and (max-width:900px), 
+          only screen and (hover:none){
+
+    height: auto;
+    &__details{
+        position: relative;
+        z-index:2;
+        padding-bottom:10rem
+    }
+    &__side{
+        height:auto;
+        position: relative;
+
+        &--back{
+            transform: rotateY(0);
+            clip-path:polygon(0 15%, 100% 0% , 100% 100%, 0% 100%);
+            padding-top:10rem;
+            margin-top:-10rem;
+            z-index:1;
+            border-top-right-radius:0;
+
+        }
+    }
+    &:hover &__side--front{
+        transform: rotateY(0);
+    }
+
+
+
+    //STYLING BACK
+    &__cta{
+        text-align: center;
+        padding-bottom:4rem;
+    }
+    }
+}
+

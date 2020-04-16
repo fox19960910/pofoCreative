@@ -1,0 +1,33 @@
+.testimoni{
+    margin:0 auto;
+    text-align: center;
+    &__quote{
+        font-size:2.5rem;
+    }
+    &__para{
+        font-size:2rem;
+        margin: 0 auto 8rem;
+        @include screen(tab-portrait){
+            font-size:1.6rem;
+    
+        }
+    }
+    &__author{
+        margin:0 auto;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        &::after,&::before{
+            content:"";
+            width:2rem;
+            height:2px;
+            background-color:$color-white;
+        }
+        &::after{
+            margin-left:2rem;
+        }
+        &::before{
+            margin-right:2rem;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+
+/* general setting */
+*,
+*:after,
+*:before{
+    padding: 0;
+    margin:0;
+    box-sizing: inherit;
+}
+html{
+    @include screen(big-desktop){
+        font-size:75%;
+    }
+    @include screen(tab-landscape){
+        font-size:56.25%;
+    }
+    font-size:62.5%;
+    @include screen(tab-portrait){
+        font-size:50%;
+    }
+   
+   
+}
+body{
+    box-sizing: border-box;
+    padding:3rem;
+
+    @include screen(phone){
+        padding:0;
+    }
+}
