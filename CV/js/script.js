@@ -2,6 +2,7 @@ var cv = {
     init:function(){
         this.stickeyCard();
         this.tabs();
+        this.portfolio();
     },
     stickeyCard:function(){
         let card = document.querySelector('.card');
@@ -41,6 +42,9 @@ var cv = {
            
         })
       
+    },
+    portfolio:function() {
+       
     }
 }
 cv.init();
