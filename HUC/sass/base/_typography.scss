@@ -2,7 +2,7 @@ body{
     font-family: 'Baloo Tammudu 2', cursive;
     font-weight: 400;
     font-size:$default-font-size;
-    line-height: 1.7;
+
 }
 // heading
 .heading-intro{
@@ -129,12 +129,14 @@ body{
 .heading-tertiary{
     font-size:1.8rem;
     color:$color-primary-light;
+    line-height: 1.7;
 }
 .paragraph{
     font-size:1.6rem;
     font-weight: 300;
     color:$color-grey-dark;
     word-break: break-word; // wrap text
+    line-height: 1.7;
     &--big{
         color:$color-grey-dark-2;
         font-size:2.1rem;

@@ -99,8 +99,7 @@ a, a:link, a:visited {
 body {
   font-family: 'Baloo Tammudu 2', cursive;
   font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7; }
+  font-size: 1.6rem; }
 
 .heading-intro {
   font-family: 'Dancing Script', cursive;
@@ -209,13 +208,15 @@ body {
 
 .heading-tertiary {
   font-size: 1.8rem;
-  color: #bd4d29; }
+  color: #bd4d29;
+  line-height: 1.7; }
 
 .paragraph {
   font-size: 1.6rem;
   font-weight: 300;
   color: #333333;
-  word-break: break-word; }
+  word-break: break-word;
+  line-height: 1.7; }
   .paragraph--big {
     color: #666666;
     font-size: 2.1rem;
@@ -872,10 +873,10 @@ body {
 .button-style {
   cursor: pointer;
   border-radius: 3px;
-  padding: 1rem 2rem;
+  padding: 1rem 3em;
   display: inline-block;
   color: #fff;
-  background-color: #bd3829;
+  background-color: #29bdff;
   margin-left: 1rem;
   margin-right: 1rem;
   font-size: 1.4rem;
@@ -1314,7 +1315,7 @@ body {
       display: none; } }
   .nav-head__list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     margin-left: 5rem; }
   .nav-head__item {
@@ -1509,13 +1510,8 @@ body {
     background: #fff;
     color: #bd2929;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-    background-image: linear-gradient(135deg, #fff 0%, #fff 50%, #bd4d29 50%);
-    background-size: 220%;
     transition: all 0.3s ease-in-out;
     margin-right: 1rem; }
-    .top-menu-login:hover {
-      color: #fff;
-      background-position: 100%; }
   .top-menu__list {
     display: flex;
     justify-content: center;
@@ -1525,15 +1521,28 @@ body {
     position: relative; }
     .top-menu__item ul {
       position: absolute;
-      width: 10rem;
+      top: 2.7rem;
+      left: -1rem;
+      z-index: 5;
       opacity: 0;
       visibility: hidden;
       background: #fff;
-      padding: 1rem 1rem 0;
       transition: all 0.3s ease-in-out; }
-      .top-menu__item ul li:not(:last-child) {
-        margin-bottom: 1rem;
-        border-bottom: thin solid #bd2929; }
+      .top-menu__item ul.active {
+        opacity: 1;
+        visibility: visible; }
+      .top-menu__item ul li {
+        transition: 0.3s; }
+        .top-menu__item ul li:not(:last-child) {
+          border-bottom: thin solid #bd2929; }
+        .top-menu__item ul li a {
+          padding: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s ease-in-out; }
+        .top-menu__item ul li a:hover {
+          background-color: #a0a0a0; }
     .top-menu__item--language::after {
       content: "";
       width: 0;
@@ -1545,10 +1554,10 @@ body {
       right: -15px;
       top: 50%;
       transform: translateY(-50%); }
-  .top-menu__item:hover ul {
-    width: 10rem;
-    opacity: 1;
-    visibility: visible; }
+  .top-menu__link {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .header {
   padding: 3rem 2rem 0;

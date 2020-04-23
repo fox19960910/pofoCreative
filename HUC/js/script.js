@@ -5,6 +5,7 @@ var action = {
         this.signForm();
         // this.slideShow();
         // this.sectionGallery();
+        this.language();
         this.galleryShow();
     },
     preload:function() {
@@ -13,6 +14,14 @@ var action = {
             preload.classList.add('preload__finished');
         }
         setTimeout(load,2000);
+    },
+    language:function() {
+        let flag = document.querySelector('.top-menu__item--language ul')
+        let languageBtn = document.querySelector('.language-btn');
+        languageBtn.addEventListener('click',(e)=>{
+            e.preventDefault();
+            flag.classList.toggle('active')
+        })
     },
     btnBar:function() {
         let bar = document.querySelector('.nav-bar')

@@ -24,14 +24,8 @@
         background:#fff;
         color:$color-primary-dark;
         box-shadow: $shadow-light; 
-        background-image: linear-gradient(135deg, #fff 0%, #fff 50%, $color-primary-light 50%);
-        background-size:220%;
         transition: $transition-3s;
         margin-right:1rem;
-        &:hover{
-            color:#fff;
-            background-position: 100%;
-        }
     }
     &__list{
         display: flex;
@@ -43,16 +37,31 @@
         position: relative;
         ul{
             position: absolute;
-            width:10rem;
+            top: 2.7rem;
+            left: -1rem;
+            z-index: 5;
             opacity: 0;
             visibility: hidden;
             background:#fff;
-            padding: 1rem 1rem 0;
             transition: $transition-3s;
+            &.active{
+                opacity: 1;
+                visibility: visible;
+            }
             li{
+                transition: 0.3s;  
                 &:not(:last-child){
-                    margin-bottom:1rem;
                     border-bottom:thin solid $color-primary-dark;
+                }
+                a{
+                    padding: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: $transition-3s;
+                }
+                a:hover{
+                    background-color:rgb(160, 160, 160);
                 }
             }
         }
@@ -72,9 +81,9 @@
             }
         }
     }
-    &__item:hover ul{
-        width:10rem;
-        opacity: 1;
-        visibility: visible;
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
