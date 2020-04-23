@@ -1,0 +1,102 @@
+.history{
+    position: relative;
+    margin-left:45rem;
+    @include screen(tab-portrait){
+        margin-left:24rem;
+    }
+    @include screen(phone){
+        margin-left:0;
+        padding-left:4rem;
+        padding-right:2rem;
+    }
+    &::before{
+        content:"";
+        position: absolute;
+        height:100%;
+        width:1px;
+        background-color:$color-primary;
+        @include screen(phone){
+            top:0;
+        }
+    }
+    &__content{
+        position: relative;
+        padding: 2rem 3rem 2rem 2rem;
+        @include screen(phone){
+            margin-left:2rem;
+            padding-top:6rem;
+        }
+        &:not(:last-child){
+            margin-bottom:2rem;
+        }
+        &::before{
+            content:"";
+            position: absolute;
+            width:4px;
+            height:4px;
+            background-color:$color-primary;
+            border-radius:50%;
+            top:3rem;
+            left:-1.5px;
+            @include screen(phone){
+                top: 2rem;
+                left: -16.5px;
+            }
+        }
+    }
+    &__logo{
+        color:$color-primary-dark;
+        font-weight:100;
+        font-style: italic;
+        img{
+            width:10rem;
+            display: block;
+        }
+    }
+    &__arrow{
+        position: absolute;
+        content:"";
+        width:19rem;
+        height:3.5rem;
+        background:$color-primary;
+        top:1.4rem;
+        left:-21.5rem;
+        justify-content: center;
+        align-items: center;
+        color:#fff;
+        @include screen(phone){
+            top:0.4rem;
+            left:2rem;
+        }
+        &::after{
+            content:"";
+            width:0;
+            height:0;
+            position: absolute;
+            border-top:1.75rem solid transparent;
+            border-bottom:1.75rem solid transparent;
+            border-left:1.75rem solid $color-primary;
+            right:-1.8rem;
+            @include screen(phone){
+                border-left:none;
+                border-right:1.75rem solid $color-primary;
+                left:-1.8rem;
+            }
+        }
+    }
+    
+
+
+}
+
+
+
+
+.result__item{
+    font-size: 1.2rem;
+    color: $color-primary-dark;
+    font-style: italic;
+    &:not(:last-child){
+        margin-bottom:1rem;
+    }
+}

@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HUC | Tin tức</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu+2:400,500,700|Dancing+Script:400,500,600,700|Srisakdi:400,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <!-- font-awsome 4.7 cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- favicon -->
+     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+    <div class="preload">
+        <div class="preload__fire">
+              <img src="img/fire-load.png" alt="" class="">
+              <ul class="preload__list">
+                 <li class="preload__item preload__text">Trang đang tải</li>
+                  <li class="preload__item preload__circle preload__circle--1"></li>
+                  <li class="preload__item preload__circle preload__circle--2"></li>
+                  <li class="preload__item preload__circle preload__circle--3"></li>
+                  
+              </ul>
+        </div>
+     </div>
+    <div class="overlay"></div>
+    <!-- form-sign in -->
+    <div class="bg-form sign-in">
+        <div class="bg-form__img">
+            <img src="img/banner.jpg" alt="" >
+        </div>
+        <div class="bg-form__side">
+            <form action="" style="width: 100%;">
+                <div class="group-container">
+                    <div class="group-control">
+                        <div class="input-style">
+                            <input type="text" placeholder="Tên đăng nhập ...">
+                            <div class="input-style__icon">
+                                <i class="fa fa-address-card" aria-hidden="true"></i>
+                            </div>
+                         </div>       
+                    </div>
+                    <div class="group-control">
+                        <div class="input-style">
+                            <input type="password"  placeholder="Mật Khẩu...">
+                            <div class="input-style__icon">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                            </div>
+                         </div> 
+                        
+                    </div>
+                    <div class="group-control">
+                        <input type="button" class="button-style" value="Đăng nhập">
+                        <input type="button" class="button-style" value="Đăng ký">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="sign-in__close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+    </div>
+    <!-- top header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="top-wrap">
+                <div class="search">
+                    <input class="search__checkbox" type="checkbox" id="search-btn">
+                    <div class="search-control">
+                        <div class="search__group-control">
+                            <input type="text" class="input-style">
+                            <label class="search__icon" for="search-btn"> <i class="fa fa-search"
+                                    aria-hidden="true"></i></label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="top-menu">
+                    <a href="" class="top-menu-login top-sign-in">Đăng nhập</a>
+                    <a href="signUp.html" target="_blank" class="top-menu-login top-sign-up">Đăng ký</a>
+                    <ul class="top-menu__list">
+                        <li class="top-menu__item top-menu__item--language">
+                            <a href="" class="top-menu__link"><img src="img/vi_flag.png" alt=""></a>
+                            <ul>
+                                <li><a href=""><img src="img/vi_flag.png" alt=""></a></li>
+                                <li><a href=""><img src="img/eng_flag.gif" alt=""></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <header class="header">
+        <div class="container-full">
+            <div class="header__menu">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="" class="logo__link">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <!-- navigation header -->
+                <nav class="nav-head">
+                    <ul class="nav-head__list">
+                        <li class="nav-head__item"><a href="index.html" target="_blank" class="nav-head__link ">Trang chủ</a></li>
+                        <li class="nav-head__item"><a href="aboutus.html" target="_blank" class="nav-head__link">Giới thiệu</a></li>
+                        <li class="nav-head__item ">
+                            <a href="news.html" target="_blank" class="nav-head__link active">Tin tức</a>
+                            <ul>
+                                <li><a href="">Tổng hợp tin</a></li>
+                                <li><a href="">Thông báo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-head__item">
+                            <a href="addmisiton.html" target="_blank" class="nav-head__link">Tuyển sinh & Đà tạo</a>
+                                <ul>
+                                    <li><a href="">Tuyển Sinh</a></li>
+                                    <li><a href="">Đào tạo</a></li>
+                                </ul>
+                            </li>
+                        <li class="nav-head__item">
+                            <a href="partner.html" class="nav-head__link">Hợp tác</a>
+                            <ul>
+                                <li><a href="">Đề tài đang triển khai</a></li>
+                                <li><a href="">Lý lịch khoa học</a></li>
+                                <li><a href="">Giới thiệu chung</a></li>
+                                <li><a href="">Tạp chí nghiên cứu</a></li>
+                                <li><a href="">Công bố khoa học</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-head__item">
+                            <a href="student.html" class="nav-head__link">Sinh Viên</a>
+                            <ul>
+                                <li><a href="">Giới thiệu chung</a></li>
+                                <li><a href="">Đối tác</a></li>
+                                <li><a href="">Hoạt dộng hợp tác</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-head__item">
+                            <a href="contact.html" target="_blank" class="nav-head__link">Liên hệ</a>
+                            <ul>
+                                <li><a href="">Cổng thông tin</a></li>
+                                <li><a href="">Sổ tay sinh viên</a></li>
+                                <li><a href="">Chính sách sinh viên</a></li>
+                                <li><a href="">Cựu sinh viên</a></li>
+                                <li><a href="">Thư điện tử</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="wrap-btn-header">
+                    <!-- search button -->
+
+
+                    <div class="nav-bar">
+                        <span class="nav-bar__line"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation responsive -->
+            <nav class="nav-responsive">
+                <ul class="nav-responsive__list">
+                    <li class="nav-responsive__item"><a href="index.html" target="_blank" class="nav-responsive__link ">Trang chủ</a></li>
+                    <li class="nav-responsive__item"><a href="aboutus.html" target="_blank" class="nav-responsive__link">Giới thiệu</a></li>                           
+                    <li class="nav-responsive__item"><a href="news.html" target="_blank" class="nav-responsive__link active">Tin tức</a></li>
+                    <li class="nav-responsive__item"><a href="admission.html" target="_blank" class="nav-responsive__link">Tuyển sinh & Đào tạo</a></li>
+                    <li class="nav-responsive__item"><a href="partner.html" target="_blank" class="nav-responsive__link">Hợp tác</a></li>
+                    <li class="nav-responsive__item"><a href="student.html" target="_blank" class="nav-responsive__link">Sinh Viên</a></li>
+                    <li class="nav-responsive__item"><a href="contact.html" target="_blank" class="nav-responsive__link">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <!-- banner -->
+            <div class="banner" style="background-image: url(img/banner.jpg);">
+
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <div class="head-content">
+            <div class="container">
+                <div class="u-flex u-align-item-center u-justify-content-center u-margin-bottom-4">
+                    <h2 class="heading-section">
+                        <span class="heading-section--main">
+                            Tin tức nổi bật
+                        </span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="head-content__img">
+                            <img src="img/article-1.jpg" alt="">
+                            <a href="#" class="head-content__text">
+                                Dự kiến Thông tin Tuyển sinh Đại học chính quy năm 2020
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-2">
+                        <h3 class="heading-secondary u-margin-bottom-1">
+                            <a href="" class="heading-secondary heading-secondary--main">Tin tức nổi bật</a>
+                        </h3>
+                        <div class="head-content__side">
+                            <div class="box-news">
+                                <div class="box-news__img"><img src="img/article-2.jpg" alt=""></div>
+                                <div class="box-news__content">
+                                    <p class="paragraph"> bai dang - 5 ngay truoc</p>
+                                    <h3 class="heading-tertiary u-margin-bottom-1">
+                                        <a class="heading-tertiary heading-tertiary--main" href="">Nhà soạn nhạc Ba Lan
+                                            lừng danh thế giới Krzysztof Penderecki đã từ trần</a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="box-news">
+                                <div class="box-news__img"><img src="img/article-2.jpg" alt=""></div>
+                                <div class="box-news__content">
+                                    <p class="paragraph"> bai dang - 5 ngay truoc</p>
+                                    <h3 class="heading-tertiary u-margin-bottom-1">
+                                        <a class="heading-tertiary heading-tertiary--main" href="">Nhà soạn nhạc Ba
+                                            Lan lừng danh thế giới Krzysztof Penderecki đã từ trần</a>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="box-news">
+                                <div class="box-news__img"><img src="img/article-2.jpg" alt=""></div>
+                                <div class="box-news__content">
+                                    <p class="paragraph"> bai dang - 5 ngay truoc</p>
+                                    <h3 class="heading-tertiary u-margin-bottom-1">
+                                        <a class="heading-tertiary heading-tertiary--main" href="">Nhà soạn nhạc Ba
+                                            Lan lừng danh thế giới Krzysztof Penderecki đã từ trần</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- last post -->
+        <section class="section-last-post">
+            <div class="container">
+                <div class="u-flex u-align-item-center u-justify-content-center u-margin-bottom-4">
+                    <h2 class="heading-section">
+                        <span class="heading-section--main">
+                            Tin tức cũ
+                        </span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <article class="article">
+                            <div class="article__img u-margin-bottom-2">
+                                <img src="img/article-3.jpg" alt="">
+                            </div>
+                            <div class="article__content">
+                                <h3 class="heading-tertiary u-margin-bottom-1">
+                                    <a class="heading-tertiary heading-tertiary--main" href="">Đại học Văn hóa Hà Nội ra
+                                        mắt MV “Tế Covid”: Khát khao chiến thắng dịch bệnh</a>
+                                </h3>
+                                <p class="paragraph u-margin-bottom-2">
+                                    Sau những ca khúc hit hot ra đời trong bối cảnh dịch bệnh Covid-19 hoành hành như
+                                    Ghen Cô Vy, Việt Nam ơi! Đánh bay Covid!, Bao la những trái tim hồng
+                                </p>
+                                <a class="btn-more article__more u-text-right u-margin-bottom-3" href="#">Xem them</a>
+                                <p class="paragraph--tiny article__date">20/4/2020</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-1-of-3">
+                        <article class="article">
+                            <div class="article__img u-margin-bottom-2">
+                                <img src="img/article-3.jpg" alt="">
+                            </div>
+                            <div class="article__content">
+                                <h3 class="heading-tertiary u-margin-bottom-1">
+                                    <a class="heading-tertiary heading-tertiary--main" href="">Đại học Văn hóa Hà Nội ra
+                                        mắt MV “Tế Covid”: Khát khao chiến thắng dịch bệnh</a>
+                                </h3>
+                                <p class="paragraph u-margin-bottom-2">
+                                    Sau những ca khúc hit hot ra đời trong bối cảnh dịch bệnh Covid-19 hoành hành như
+                                    Ghen Cô Vy, Việt Nam ơi! Đánh bay Covid!, Bao la những trái tim hồng
+                                </p>
+                                <a class="btn-more article__more u-text-right u-margin-bottom-3" href="#">Xem them</a>
+                                <p class="paragraph--tiny article__date">20/4/2020</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-1-of-3">
+                        <article class="article">
+                            <div class="article__img u-margin-bottom-2">
+                                <img src="img/article-3.jpg" alt="">
+                            </div>
+                            <div class="article__content">
+                                <h3 class="heading-tertiary u-margin-bottom-1">
+                                    <a class="heading-tertiary heading-tertiary--main" href="">Đại học Văn hóa Hà Nội ra
+                                        mắt MV “Tế Covid”: Khát khao chiến thắng dịch bệnh</a>
+                                </h3>
+                                <p class="paragraph u-margin-bottom-2">
+                                    Sau những ca khúc hit hot ra đời trong bối cảnh dịch bệnh Covid-19 hoành hành như
+                                    Ghen Cô Vy, Việt Nam ơi! Đánh bay Covid!, Bao la những trái tim hồng
+                                </p>
+                                <a class="btn-more article__more u-text-right u-margin-bottom-3" href="#">Xem them</a>
+                                <p class="paragraph--tiny article__date">20/4/2020</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- anothor post  -->
+        <section class="another-post">
+            <div class="container">
+                <div class="u-flex u-align-item-center u-justify-content-center u-margin-bottom-4">
+                    <h2 class="heading-section">
+                        <span class="heading-section--main">
+                            Danh sách tin tức
+                        </span>
+                    </h2>
+                </div>
+                <div class="body-content">
+                    <article class="main-content">
+                        <div class="row">
+                            <div class="col-1-of-1">
+                                <div class="article-small">
+                                    <div class="article-small__img">
+                                        <img src="img/article-1.jpg" alt="">
+                                        <div class="article-small__label">hot</div>
+                                    </div>
+                                    <div class="article-small__content">
+                                        <p class="article-small__catalog">The gioi</p>
+                                        <h3 class="heading-tertiary u-margin-bottom-1">
+                                            <a class="heading-tertiary heading-tertiary--main" href="">Đại học Văn hóa
+                                                Hà Nội ra
+                                                mắt MV “Tế Covid”: Khát khao chiến thắng dịch bệnh</a>
+                                        </h3>
+                                        <ul class="article__list">
+                                            <li class="article__item article__author">by <strong>Le Xuan Tung</strong>
+                                            </li>
+                                            <li class="article__item paragraph--tiny article__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>21/04/2020
+                                            </li>
+                                            <li class="article__item article__view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>1000+ views
+                                            </li>
+                                        </ul>
+                                        <p class="paragraph u-margin-bottom-2">
+                                            Sau những ca khúc hit hot ra đời trong bối cảnh dịch bệnh Covid-19 hoành
+                                            hành như
+                                            Ghen Cô Vy, Việt Nam ơi! Đánh bay Covid!, Bao la những trái tim hồng
+                                        </p>
+                                        <a class="btn-more article__more u-text-right u-margin-bottom-3" href="#">Xem
+                                            them</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1-of-1">
+                                <div class="article-small">
+                                    <div class="article-small__img">
+                                        <img src="img/article-2.jpg" alt="">
+                                        <div class="article-small__label">hot</div>
+                                    </div>
+                                    <div class="article-small__content">
+                                        <p class="article-small__catalog">am nhac</p>
+                                        <h3 class="heading-tertiary u-margin-bottom-1">
+                                            <a class="heading-tertiary heading-tertiary--main" href="">Đại học Văn hóa
+                                                Hà Nội ra
+                                                mắt MV “Tế Covid”: Khát khao chiến thắng dịch bệnh</a>
+                                        </h3>
+                                        <ul class="article__list">
+                                            <li class="article__item article__author">by <strong>Le Xuan Tung</strong>
+                                            </li>
+                                            <li class="article__item paragraph--tiny article__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>21/04/2020
+                                            </li>
+                                            <li class="article__item article__view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>1000+ views
+                                            </li>
+                                        </ul>
+                                        <p class="paragraph u-margin-bottom-2">
+                                            Sau những ca khúc hit hot ra đời trong bối cảnh dịch bệnh Covid-19 hoành
+                                            hành như
+                                            Ghen Cô Vy, Việt Nam ơi! Đánh bay Covid!, Bao la những trái tim hồng
+                                        </p>
+                                        <a class="btn-more article__more u-text-right u-margin-bottom-3" href="#">Xem
+                                            them</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1-of-1">
+                                <div class="article-small">
+                                    <div class="article-small__img">
+                                        <img src="img/article-3.jpg" alt="">
+                                        <div class="article-small__label">hot</div>
+                                    </div>
+                                    <div class="article-small__content">
+                                        <p class="article-small__catalog">viet nam</p>
+                                        <h3 class="heading-tertiary u-margin-bottom-1">
+                                            <a class="heading-tertiary heading-tertiary--main" href="">Đại học Văn hóa
+                                                Hà Nội ra
+                                                mắt MV “Tế Covid”: Khát khao chiến thắng dịch bệnh</a>
+                                        </h3>
+                                        <ul class="article__list">
+                                            <li class="article__item article__author">by <strong>Le Xuan Tung</strong>
+                                            </li>
+                                            <li class="article__item paragraph--tiny article__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>21/04/2020
+                                            </li>
+                                            <li class="article__item article__view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>1000+ views
+                                            </li>
+                                        </ul>
+                                        <p class="paragraph u-margin-bottom-2">
+                                            Sau những ca khúc hit hot ra đời trong bối cảnh dịch bệnh Covid-19 hoành
+                                            hành như
+                                            Ghen Cô Vy, Việt Nam ơi! Đánh bay Covid!, Bao la những trái tim hồng
+                                        </p>
+                                        <a class="btn-more article__more u-text-right u-margin-bottom-3" href="#">Xem
+                                            them</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1-of-1">
+                                <div class="article-small">
+                                    <div class="article-small__img">
+                                        <img src="img/article-4.jpg" alt="">
+                                        <div class="article-small__label">hot</div>
+                                    </div>
+                                    <div class="article-small__content">
+                                        <p class="article-small__catalog">viet nam</p>
+                                        <h3 class="heading-tertiary u-margin-bottom-1">
+                                            <a class="heading-tertiary heading-tertiary--main" href="">Đại học Văn hóa
+                                                Hà Nội ra
+                                                mắt MV “Tế Covid”: Khát khao chiến thắng dịch bệnh</a>
+                                        </h3>
+                                        <ul class="article__list">
+                                            <li class="article__item article__author">by <strong>Le Xuan Tung</strong>
+                                            </li>
+                                            <li class="article__item paragraph--tiny article__date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>21/04/2020
+                                            </li>
+                                            <li class="article__item article__view">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>1000+ views
+                                            </li>
+                                        </ul>
+                                        <p class="paragraph u-margin-bottom-2">
+                                            Sau những ca khúc hit hot ra đời trong bối cảnh dịch bệnh Covid-19 hoành
+                                            hành như
+                                            Ghen Cô Vy, Việt Nam ơi! Đánh bay Covid!, Bao la những trái tim hồng
+                                        </p>
+                                        <a class="btn-more article__more u-text-right u-margin-bottom-3" href="#">Xem
+                                            them</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="u-flex u-justify-content-center u-align-item-center">
+                            <a href="#" class="btn">Xem them bai viet</a>
+                        </div>
+                    </article>
+                    <aside class="side-bar">
+                        <div class="adverisement">
+                            <div class="adverisement__img">
+                                <img src="img/tuyensinh.jpg" alt="">
+                            </div>
+                            <div class="adverisement__img">
+                                <img src="img/tuyensinh-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- break -->
+        <div class="container">
+            <div class="u-flex u-align-item-center u-justify-content-center u-margin-bottom-4 u-margin-top-4">
+                <h2 class="heading-section">
+                    <span class="heading-section--main">
+                        Danh mục tin
+                    </span>
+                </h2>
+            </div>
+        </div>
+        <!-- news & event -->
+        <section class="news-event">
+            <div class="container">
+                <h2 class="heading-primary u-margin-bottom-2 heading-primary--bg">
+                    <a class="heading-primary heading-primary--main" href="">tin tức & sự kiện</a>
+                </h2>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <article class="article">
+                            <div class="article__img u-margin-bottom-2">
+                                <img src="img/article-2.jpg" alt="">
+                            </div>
+                            <div class="article__content">
+                                <h3 class="heading-tertiary u-margin-bottom-1">
+                                    <a class="heading-tertiary heading-tertiary--main" href="">Tọa đàm Doanh nghiệp -
+                                        Doanh nhân trực tuyến: “Quản trị khủng hoảng doanh nghiệp du lịch mùa dịch
+                                        Covid-19”</a>
+                                </h3>
+                                <p class="paragraph u-margin-bottom-2">
+                                    Để theo kịp với diễn biến “nóng-lạnh” của thị trường du lịch do tác động của dịch
+                                    Covid-19, cập nhật tình hình cụ thể, thực tế của các doanh nghiệp du lịch Việt Nam
+                                    hiện nay và có thể dự đoán xu thế phát triển, nhu cầu
+                                </p>
+                                <a class="btn-more article__more u-text-right u-margin-bottom-3" href="#">Xem them</a>
+                                <p class="paragraph--tiny article__date">20/4/2020</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-1-of-2">
+                        <h3 class="heading-secondary u-margin-bottom-1">
+                            <a href="" class="heading-secondary heading-secondary--main">Tin tức liên quan</a>
+                        </h3>
+                        <div class="article-list">
+                            <ul class="article-list__list">
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Nhà soạn nhạc Ba Lan
+                                        lừng danh thế giới Krzysztof Penderecki đã từ trần</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Hội nghị cán bộ chủ
+                                        chốt lấy phiếu giới thiệu nhân sự Đại hội Đảng bộ Trường Đại học Văn hóa Hà Nội
+                                        lần thứ XX, nhiệm kỳ 2020 – 2025</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Làm việc với Đoàn
+                                        kiểm tra công tác phòng, chống dịch bệnh Covid-19 của Trung tâm Kiểm soát bệnh
+                                        tật thành phố Hà Nội và Trung tâm Y tế quận Đống Đa</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>HƯỚNG DẪN ĐĂNG KÝ,
+                                        CÀI ĐẶT, ĐĂNG NHẬP VÀ VÀO LỚP HỌC TRÊN NỀN TÀNG MICROSOFT OFFICE 365</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Cuộc thi trắc nghiệm
+                                        “Tìm hiểu 90 năm Ngày truyền thống ngành Tuyên giáo của Đảng”</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hot event -->
+        <section class="hot-event">
+            <div class="container">
+                <h2 class="heading-primary u-margin-bottom-2 heading-primary--bg">
+                    <a class="heading-primary heading-primary--main" href="">Sự kiện nổi bật</a>
+                </h2>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <article class="article">
+                            <div class="article__img u-margin-bottom-2">
+                                <img src="img/article-3.jpg" alt="">
+                            </div>
+                            <div class="article__content">
+                                <h3 class="heading-tertiary u-margin-bottom-1">
+                                    <a class="heading-tertiary heading-tertiary--main" href="">Đại học Văn hóa Hà Nội ra
+                                        mắt MV “Tế Covid”: Khát khao chiến thắng dịch bệnh</a>
+                                </h3>
+                                <p class="paragraph u-margin-bottom-2">
+                                    Sau những ca khúc hit hot ra đời trong bối cảnh dịch bệnh Covid-19 hoành hành như
+                                    Ghen Cô Vy, Việt Nam ơi! Đánh bay Covid!, Bao la những trái tim hồng, Người mẹ áo
+                                    trắng…, gần đây trên mạng xã hội tiếp tục ra mắt một sản phẩm âm nhạc khá thú vị do
+                                    các giảng viên, sinh viên Trường Đại học Văn hóa Hà Nội thực hiện.
+                                </p>
+                                <a class="btn-more article__more u-text-right u-margin-bottom-3" href="#">Xem them</a>
+                                <p class="paragraph--tiny article__date">20/4/2020</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-1-of-2">
+                        <h3 class="heading-secondary u-margin-bottom-1">
+                            <a href="" class="heading-secondary heading-secondary--main">Tin mới</a>
+                        </h3>
+                        <div class="article-list">
+                            <ul class="article-list__list">
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Ban Giám hiệu Nhà
+                                        trường chúc Tết cán bộ, viên chức và cán bộ hưu trí</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> Đại hội Đại biểu
+                                        Đoàn TNCS Hồ Chí Minh Trường Đại học Văn hoá Hà Nội lần thứ 26, nhiệm kỳ 2019 -
+                                        2022</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Trường Đại học Văn
+                                        hóa Hà Nội chào mừng Ngày Nhà giáo Việt Nam 20/11</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Hội diễn 20/11/2019:
+                                        Đêm thăng hoa của những nghệ sĩ “không chuyên”</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- notify -->
+        <section class="notify">
+            <div class="container">
+                <h2 class="heading-primary u-margin-bottom-2 heading-primary--bg">
+                    <a class="heading-primary heading-primary--main " href="">Tin thông báo</a>
+                </h2>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <article class="article">
+                            <div class="article__img u-margin-bottom-2">
+                                <img src="img/article-4.jpg" alt="">
+                            </div>
+                            <div class="article__content">
+                                <h3 class="heading-tertiary u-margin-bottom-1">
+                                    <a class="heading-tertiary heading-tertiary--main" href="">Triển khai Cuộc thi viết
+                                        về điển hình “Dân vận khéo” năm 2020</a>
+                                </h3>
+                                <p class="paragraph u-margin-bottom-2">
+                                    Trường Đại học Văn hóa Hà Nội phát triển theo hướng là cơ sở đào tạo và nghiên cứu
+                                    khoa học đa ngành, đa cấp thuộc lĩnh vực khoa học xã hội và nhân văn.
+                                </p>
+                                <a class="btn-more article__more u-text-right u-margin-bottom-4" href="#">Xem them</a>
+                                <p class="paragraph--tiny article__date">20/4/2020</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-1-of-2">
+                        <h3 class="heading-secondary u-margin-bottom-1">
+                            <a href="" class="heading-secondary heading-secondary--main ">Tin tức liên quan</a>
+                        </h3>
+                        <div class="article-list">
+                            <ul class="article-list__list">
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> Cuộc thi trắc nghiệm
+                                        “Tìm hiểu 90 năm Ngày truyền thống ngành Tuyên giáo của Đảng”</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> Hưởng ứng cuộc thi
+                                        tìm hiểu truyền thống ngành tuyên giáo</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> Thông báo chiêu sinh
+                                        Lớp Bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp Phương pháp viên hạng IV</a>
+                                </li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> Thông báo chiêu sinh
+                                        Lớp Bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp Phương pháp viên hạng II</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- admissions -->
+        <section class="admissions">
+            <div class="container">
+                <h2 class="heading-primary u-margin-bottom-2 heading-primary--bg">
+                    <a class="heading-primary heading-primary--main " href="">Tuyển Sinh</a>
+                </h2>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <article class="article">
+                            <div class="article__img u-margin-bottom-2">
+                                <img src="img/article-5.png" alt="">
+                            </div>
+                            <div class="article__content">
+                                <h3 class="heading-tertiary u-margin-bottom-1">
+                                    <a class="heading-tertiary heading-tertiary--main" href="">TUYỂN SINH ĐẠI HỌC KHOA
+                                        QUẢN LÝ VĂN HÓA NGHỆ THUẬT 2020</a>
+                                </h3>
+                                <p class="paragraph u-margin-bottom-2">
+                                    Trường Đại học Văn hóa Hà Nội phát triển theo hướng là cơ sở đào tạo và nghiên cứu
+                                    khoa học đa ngành, đa cấp thuộc lĩnh vực khoa học xã hội và nhân văn.
+                                </p>
+                                <a class="btn-more article__more u-text-right u-margin-bottom-3" href="#">Xem them</a>
+                                <p class="paragraph--tiny article__date">20/4/2020</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-1-of-2">
+                        <h3 class="heading-secondary u-margin-bottom-1">
+                            <a href="" class="heading-secondary heading-secondary--main">Tin tức liên quan</a>
+                        </h3>
+                        <div class="article-list">
+                            <ul class="article-list__list">
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Dự kiến Thông tin
+                                        Tuyển sinh Ngành Sáng tác văn học năm 2020</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Chuyên ngành Nghiên
+                                        cứu văn hóa gắn thương hiệu với chất lượng đào tạo</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Cử nhân chuyên ngành
+                                        Văn hóa Đối ngoại - tiềm năng và cơ hội việc làm</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Dự kiến Thông tin
+                                        Tuyển sinh Đại học chính quy năm 2020</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- education -->
+        <section class="news-education">
+            <div class="container">
+                <h2 class="heading-primary u-margin-bottom-2 heading-primary--bg">
+                    <a class="heading-primary heading-primary--main " href="">Đào tạo tuyển sinh</a>
+                </h2>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <article class="article">
+                            <div class="article__img u-margin-bottom-2">
+                                <img src="img/article-1.jpg" alt="">
+                            </div>
+                            <div class="article__content">
+                                <h3 class="heading-tertiary u-margin-bottom-1">
+                                    <a class="heading-tertiary heading-tertiary--main" href="">Thông báo Tuyển sinh
+                                        trình độ Đại học hình thức vừa làm vừa học năm 2020</a>
+                                </h3>
+                                <p class="paragraph u-margin-bottom-2">
+                                    Trường Đại học Văn hóa Hà Nội phát triển theo hướng là cơ sở đào tạo và nghiên cứu
+                                    khoa học đa ngành, đa cấp thuộc lĩnh vực khoa học xã hội và nhân văn.
+                                </p>
+                                <a class="btn-more article__more u-text-right u-margin-bottom-3" href="#">Xem them</a>
+                                <p class="paragraph--tiny article__date">20/4/2020</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-1-of-2">
+                        <h3 class="heading-secondary u-margin-bottom-1">
+                            <a href="" class="heading-secondary heading-secondary--main">Tin mới</a>
+                        </h3>
+                        <div class="article-list">
+                            <ul class="article-list__list">
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>TUYỂN SINH ĐẠI HỌC
+                                        KHOA QUẢN LÝ VĂN HÓA NGHỆ THUẬT 2020</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Dự kiến Thông tin
+                                        Tuyển sinh Ngành Sáng tác văn học năm 2020</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Chuyên ngành Nghiên
+                                        cứu văn hóa gắn thương hiệu với chất lượng đào tạo</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Triển khai Cuộc thi
+                                        viết về điển hình “Dân vận khéo” năm 2020</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Cuộc thi trắc nghiệm
+                                        “Tìm hiểu 90 năm Ngày truyền thống ngành Tuyên giáo của Đảng”</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Hưởng ứng cuộc thi
+                                        tìm hiểu truyền thống ngành tuyên giáo”</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Cử nhân chuyên ngành
+                                        Văn hóa Đối ngoại - tiềm năng và cơ hội việc làm”</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Thông báo lùi thời
+                                        hạn thu hồ sơ chế độ chính sách của sinh viên học kỳ II - năm học 2019 -
+                                        2020”</a></li>
+                                <li class="article-list__item"><a href="" class="article-list__link">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Đại học Văn hóa Hà
+                                        Nội ra mắt MV “Tế Covid”: Khát khao chiến thắng dịch bệnh”</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slide-show">
+            <div class="prev-btn">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </div>
+            <div class="next-btn">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+            <div class="slide-item active" style="background-image: url(img/article-1.jpg);">aaaa</div>
+            <div class="slide-item" style="background-image: url(img/article-2.jpg);">aaaa</div>
+            <div class="slide-item" style="background-image: url(img/article-3.jpg);">aaaa</div>
+        </div>
+
+
+
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="nav-footer">
+                <ul class="nav-footer__list">
+                    <li class="nav-footer__item"><a href="" class="nav-footer__link">TRANG CHỦ</a></li>
+                    <li class="nav-footer__item"><a href="" class="nav-footer__link">TRAO ĐỔI</a></li>
+                    <li class="nav-footer__item"><a href="" class="nav-footer__link">NGHIÊN CỨU KHOA HOC</a></li>
+                    <li class="nav-footer__item"><a href="" class="nav-footer__link">CHUYÊN ĐỀ</a></li>
+                    <li class="nav-footer__item"><a href="" class="nav-footer__link">GIÁO DỤC</a></li>
+                    <li class="nav-footer__item"><a href="" class="nav-footer__link">SINH VIÊN</a></li>
+                    <li class="nav-footer__item"><a href="" class="nav-footer__link">LIÊN HỆ</a></li>
+
+                </ul>
+            </nav>
+
+            <ul class="footer__contact">
+                <li class="footer__item">Trường Đại học Văn Hoá Hà Nội - Hanoi University Of Culture</li>
+                <li class="footer__item">Địa chỉ: 418 Đường La Thành - Quận Đống Đa - Hà Nội - Việt Nam</li>
+                <li class="footer__item">Tel:(+84) 2438.511.971 * Fax:(+84) 2435.141.629 * Email:
+                    daihocvanhoahanoi@huc.edu.vn</li>
+            </ul>
+
+            <nav class="nav-social">
+                <ul class="nav-social__list">
+                    <li class="nav-social__item">
+                        <a href="" class="nav-social__link">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-social__item">
+                        <a href="" class="nav-social__link">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-social__item">
+                        <a href="" class="nav-social__link">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

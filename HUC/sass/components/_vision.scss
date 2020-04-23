@@ -1,0 +1,11 @@
+.vision{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__description{
+        padding:0 5rem;
+    }
+    @include screen(tab-portrait){
+        padding-top:5rem;
+    }
+}

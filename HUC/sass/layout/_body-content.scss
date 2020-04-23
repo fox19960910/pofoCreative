@@ -1,0 +1,13 @@
+.body-content{
+    display: flex;
+}
+.main-content{
+    flex: 0 0 70%;
+    max-width:70%;
+    padding:1.5rem;
+}
+.side-bar{
+    flex: 0 0 30%;
+    max-width:30%;
+    padding:0 1.5rem;
+}

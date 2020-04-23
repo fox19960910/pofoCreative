@@ -1,0 +1,28 @@
+.education{
+    display: flex;
+    padding:2rem;
+    flex-direction: column;
+    color:$color-primary;
+    border-radius:3px;
+    background-color:#fff;
+    box-shadow: 0 1.5rem  4rem rgba(#000,0.4);
+    height:20rem;
+    justify-content: space-around;
+    transition:all 0.2s;
+    &__title{
+        text-transform: uppercase;
+        font-size:2rem;
+        flex:1;
+    }
+    &__icon{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        i{
+            font-size:6rem;
+        }
+    }
+    &:hover{
+        transform:translateY(-2rem);
+    }
+}

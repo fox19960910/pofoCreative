@@ -1,0 +1,46 @@
+.composition{
+  position: relative;
+    &__img{
+      width:50%;
+      height:20rem;
+      object-fit:cover;
+      position: absolute;
+      outline-offset: 2rem;
+      z-index:3;
+      transition:all 0.2s;
+      box-shadow: 0 1.5rem 4rem rgba(#000,0.4);
+      &--1{
+        top:0;
+        left:0;
+        @include screen(tab-portrait){
+          top:5rem;
+          left:-1rem;
+        }
+      }
+      &--2{
+        top:5rem;
+        right:0;
+        @include screen(tab-portrait){
+          top:6rem;
+          right:-1rem;
+        }
+      }
+      &--3{
+        top:10rem;
+        left:20%;
+        @include screen(tab-portrait){
+          top:3rem;
+        }
+      }
+      &:hover{
+        z-index:4;
+        outline: 1rem solid $color-primary;
+        transform: scale(1.3);
+        box-shadow: $shadow-dark;
+      }
+     
+    }
+    &:hover &__img:not(:hover){
+      transform: scale(0.95);
+    }
+}

@@ -1,0 +1,44 @@
+.partner{
+    display: flex;
+    flex-wrap: wrap;
+    overflow:hidden;
+    &__item{
+        flex: 0 0 calc(100%/5);
+        max-width:calc(100%/5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &:after,&:before{
+            position: absolute;
+            content:"";
+        }
+        &:after{
+            height:100%;
+            width:1px;
+            border-left: 1px dashed #bcbcbc;
+            top:0;
+            left:-1px;
+        }
+        &:before{
+            width:100%;
+            height:1px;
+            border-bottom: 1px dashed #bcbcbc;
+            bottom:-1px;
+            left:0;
+        }
+        img{
+            width:80%;
+            height:80%;
+            display: block;
+            object-fit:cover;
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+            transition:0.2s;
+
+        }
+    }
+    &__item:hover img{
+        transform: scale(1.2)
+    }
+}
