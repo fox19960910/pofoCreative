@@ -3,7 +3,7 @@ var action = {
         this.preload();
         this.btnBar();
         this.signForm();
-        // this.sectionGallery();
+        this.fixedMenu();
         this.language();
         this.galleryShow();
     },
@@ -22,12 +22,29 @@ var action = {
             flag.classList.toggle('active')
         })
     },
+    fixedMenu:function() {
+        let headMenu = document.querySelector('.header__menu');
+        let sticky = headMenu.offsetTop;
+        console.log(window.pageYOffset, sticky)
+        window.addEventListener('scroll',()=>{
+            if(window.pageYOffset > sticky){
+           
+                headMenu.classList.add('active')
+            }
+            else{
+                headMenu.classList.remove('active')
+            }
+        })
+    },
     btnBar:function() {
         let bar = document.querySelector('.nav-bar')
-        console.log(bar)
+        let close = document.querySelector('.nav-close')
         let navResponsive = document.querySelector('.nav-responsive')
         bar.addEventListener('click',function(){
-            navResponsive.classList.toggle('active')
+            navResponsive.classList.add('active')
+        })
+        close.addEventListener('click',function(){
+            navResponsive.classList.remove('active')
         })
 
     },
