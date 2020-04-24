@@ -97,7 +97,7 @@ a, a:link, a:visited {
   text-decoration: none; }
 
 body {
-  font-family: 'Baloo Tammudu 2', cursive;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 1.6rem; }
 
@@ -488,9 +488,26 @@ body {
       margin-right: 1rem; }
   .article__date {
     margin-top: auto; }
+  .article__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 6rem; }
+  .article__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 11rem; }
 
 .article-small {
   display: flex; }
+  @media only screen and (max-width: 600px) {
+    .article-small {
+      flex-wrap: wrap; } }
   .article-small__img {
     flex: 0 0 45%;
     max-width: 45%;
@@ -502,6 +519,12 @@ body {
       display: block;
       margin: 0 auto;
       object-fit: cover; }
+    @media only screen and (max-width: 600px) {
+      .article-small__img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.5rem; } }
   .article-small__label {
     color: #fff;
     position: absolute;
@@ -511,6 +534,13 @@ body {
     top: 2rem;
     right: 2rem;
     box-shadow: 0rem 4rem 1.5rem rgba(255, 255, 255, 0.8); }
+  .article-small__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 11rem; }
 
 .btn-more {
   display: inline-block;
@@ -624,7 +654,7 @@ body {
   width: 100%;
   height: 100%;
   -webkit-filter: grayscale(100%) opacity(70%);
-  filter: grayscale(100%) opacity(70%);
+  filter: grayscale(100%) opacity(90%) blur(1px);
   transition: 0.3s;
   top: 0;
   left: 0;
@@ -673,7 +703,7 @@ body {
   .gallery__link {
     color: #bd3829;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 5px;
     font-size: 2rem;
     text-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
@@ -1046,14 +1076,15 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   height: 20rem;
   justify-content: space-around;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  text-align: center; }
   .education__title {
     text-transform: uppercase;
     font-size: 2rem;
     flex: 1; }
   .education__icon {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center; }
     .education__icon i {
       font-size: 6rem; }
@@ -1096,7 +1127,10 @@ body {
       filter: grayscale(100%);
       transition: 0.2s; }
   .partner__item:hover img {
-    transform: scale(1.2); }
+    transform: scale(1.2);
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%); }
 
 .history {
   position: relative;
@@ -1347,7 +1381,7 @@ body {
     display: inline-block;
     text-transform: uppercase;
     padding: 0.5rem 0;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 2px;
     position: relative;
     transition: all 0.3s ease-in-out; }
@@ -1498,6 +1532,7 @@ body {
 .top-menu {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   flex: 1; }
   @media only screen and (max-width: 600px) {
     .top-menu {
@@ -1506,12 +1541,15 @@ body {
       margin-top: 2rem; } }
   .top-menu-login {
     display: inline-block;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     background: #fff;
     color: #bd2929;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
-    margin-right: 1rem; }
+    margin-right: 2rem;
+    transition: 0.2s; }
+    .top-menu-login:hover {
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6); }
   .top-menu__list {
     display: flex;
     justify-content: center;
@@ -1661,17 +1699,27 @@ body {
     background: rgba(0, 0, 0, 0.6); }
 
 .body-content {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .main-content {
   flex: 0 0 70%;
   max-width: 70%;
   padding: 1.5rem; }
+  @media only screen and (max-width: 940px) {
+    .main-content {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 2rem; } }
 
 .side-bar {
   flex: 0 0 30%;
   max-width: 30%;
   padding: 0 1.5rem; }
+  @media only screen and (max-width: 940px) {
+    .side-bar {
+      flex: 0 0 100%;
+      max-width: 100%; } }
 
 .top-news {
   padding: 5rem 0 3rem; }

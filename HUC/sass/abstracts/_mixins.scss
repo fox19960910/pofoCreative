@@ -5,7 +5,13 @@
         clear:both;
     }
 }
-
+@mixin textOverflow($num-line){
+        display: -webkit-box;
+        -webkit-line-clamp: $num-line;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
 //position
 @mixin center{
     position: absolute;

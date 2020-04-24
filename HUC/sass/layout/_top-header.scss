@@ -12,6 +12,7 @@
 .top-menu{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     flex:1;
     @include screen(phone){
        order:2;
@@ -20,12 +21,16 @@
       }
     &-login{
         display: inline-block;
-        padding:0.5rem 2rem;
+        padding:1rem 2rem;
         background:#fff;
         color:$color-primary-dark;
         box-shadow: $shadow-light; 
         transition: $transition-3s;
-        margin-right:1rem;
+        margin-right:2rem;
+        transition: 0.2s;
+        &:hover{
+            box-shadow: $shadow-dark;
+        }
     }
     &__list{
         display: flex;
