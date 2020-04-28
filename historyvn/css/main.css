@@ -500,6 +500,17 @@ body {
     opacity: 1; }
   .period:hover .period__img .period__overlay {
     opacity: 1; }
+  @media only screen and (max-width: 900px), only screen and (hover: none) {
+    .period__overlay {
+      opacity: 1; }
+    .period__box {
+      width: 90%;
+      height: 90%;
+      opacity: 1;
+      visibility: visible; }
+    .period__btn {
+      opacity: 1;
+      transform: translateY(0); } }
 
 .btn {
   padding: 1rem 2rem;
@@ -635,6 +646,63 @@ body {
 .tab__content.active {
   display: block;
   animation: fadeIn 2s ease, moveSlide 1s ease; }
+
+.gallery {
+  padding: 10rem 0; }
+
+.gallery-smart-row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%; }
+
+.gallery-smart-col-1 {
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+.gallery-smart-col-2 {
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+.gallery-smart-col-4 {
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+.wrap-img {
+  overflow: hidden;
+  height: 100%; }
+  .wrap-img img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 1rem solid #f8f8f8;
+    opacity: .7;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    cursor: pointer; }
+  .wrap-img:hover img {
+    transform: scale(1.1);
+    opacity: 1; }
+
+#lightbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 100; }
+  #lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: fadeIn 0.5s; }
+  #lightbox img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover; }
 
 .pagination {
   display: inline-block; }
