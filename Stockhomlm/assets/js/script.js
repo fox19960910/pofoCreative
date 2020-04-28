@@ -8,7 +8,7 @@ window.onload = ()=>{var action = {
     fixedHeader:function(){
         let header = document.querySelector('.header');
         let logo = document.querySelector('.nav__logo a img');
-        console.log(logo)
+        console.log(logo.location.src)
         let heightOfHeader = header.offsetTop;
         window.addEventListener('scroll',function(){
             if (heightOfHeader < window.pageYOffset){

@@ -4,81 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trang chủ</title>
+    <title>Sơ lược</title>
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <!-- header-->
     <header class="header">
       <div class="container">
+        <!-- header navigation-->
         <div class="header__nav">
-          <div class="logo"><a><img src="../img/logo-white.png"></a></div>
+          <!--logo-->
+          <div class="logo"><a><img src="../img/logo-dark.png"></a></div>
+          <!-- menu navigation-->
           <nav class="nav-head">
             <ul class="nav-head__list">
               <li class="nav-head__item"><a class="nav-head__link" href="index.html">Trang chủ</a></li>
-              <li class="nav-head__item"><a class="nav-head__link" href="#section-quickview">Sơ lược</a></li>
-              <li class="nav-head__item"><a class="nav-head__link" href="#section-period">Giai đoạn lịch sử</a></li>
-              <li class="nav-head__item"><a class="nav-head__link" href="#section-blog">Bài viết</a></li>
-              <li class="nav-head__item"><a class="nav-head__link" href="#section-event">Sự kiện</a></li>
+              <li class="nav-head__item"><a class="nav-head__link" href="overview.html">Sơ lược</a></li>
+              <li class="nav-head__item"><a class="nav-head__link" href="period.html">Giai đoạn lịch sử</a></li>
+              <li class="nav-head__item"><a class="nav-head__link" href="blog.html">Bài viết</a></li>
+              <li class="nav-head__item"><a class="nav-head__link" href="index.html #section-event">Sự kiện</a></li>
               <li class="nav-head__item"><a class="nav-head__link" href="gallery.html">Thư viện</a></li>
-              <li class="nav-head__item"><a class="nav-head__link" href="#section-contact">Liên hệ </a></li>
+              <li class="nav-head__item"><a class="nav-head__link" href="contact.html">Liên hệ </a></li>
             </ul>
           </nav>
+          <!-- button bar -->
           <div class="nav-bar"><span class="nav-bar__line">  </span></div>
           <div class="nav-overlay">  </div>
+          <!-- navigation mobile-->
           <nav class="nav-responsive">
             <div class="nav-responsive__close"><i class="fa fa-times" aria-hidden="true"></i></div>
             <ul class="nav-responsive__list">
-              <li class="nav-responsive__item"><a class="nav-responsive__link" href="#">Trang chủ</a></li>
-              <li class="nav-responsive__item"><a class="nav-responsive__link" href="#">Sơ lược</a></li>
-              <li class="nav-responsive__item"><a class="nav-responsive__link" href="#">Giai đoạn lịch sử</a></li>
-              <li class="nav-responsive__item"><a class="nav-responsive__link" href="#">Bài viết</a></li>
+              <li class="nav-responsive__item"><a class="nav-responsive__link" href="index.html">Trang chủ</a></li>
+              <li class="nav-responsive__item"><a class="nav-responsive__link" href="overview.html">Sơ lược</a></li>
+              <li class="nav-responsive__item"><a class="nav-responsive__link" href="period.html">Giai đoạn lịch sử</a></li>
+              <li class="nav-responsive__item"><a class="nav-responsive__link" href="blog.html">Bài viết</a></li>
               <li class="nav-responsive__item"><a class="nav-responsive__link" href="#">Sự Kiện</a></li>
-              <li class="nav-responsive__item"><a class="nav-responsive__link" href="#">Thư viện</a></li>
-              <li class="nav-responsive__item"><a class="nav-responsive__link" href="#">Liên hệ</a></li>
+              <li class="nav-responsive__item"><a class="nav-responsive__link" href="gallery.html">Thư viện</a></li>
+              <li class="nav-responsive__item"><a class="nav-responsive__link" href="contact.html">Liên hệ</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <div class="slides">
-      <div class="slides-item">
-        <section class="banner banner--1">
-          <div class="container">
-            <div class="banner__box">
-              <h2 class="heading-head"><span class="heading-head--main">Lịch sử Việt Nam</span><span class="heading-head--sub">Việt Nam là quốc gia có về dày về lịch sử trải dài thời kỳ vua Hùng tới nay.</span></h2>
-            </div>
-            <div class="mouse-scroll"><a class="mouse-scroll__link" href="#section-overview"></a></div>
-          </div>
-        </section>
+    <!-- slide banner-->
+    <section class="banner banner--small banner--2">
+      <div class="container">
+        <div class="banner__box">
+          <h2 class="heading-head"><span class="heading-head--main">Sơ lược lịch sử Việt</span><span class="heading-head--sub">Ngắn gọn khái quát lịch sử Việt Nam qua từng thời kì.</span></h2>
+        </div>
       </div>
-      <div class="slides-item active">
-        <section class="banner banner--2">
-          <div class="container">
-            <div class="banner__box">
-              <h2 class="heading-head"><span class="heading-head--main">Lịch sử Việt Nam</span><span class="heading-head--sub">Việt Nam là quốc gia có về dày về lịch sử trải dài thời kỳ vua Hùng tới nay.</span></h2>
-            </div>
-            <div class="mouse-scroll"><a class="mouse-scroll__link" href="#section-overview"></a></div>
-          </div>
-        </section>
-      </div>
-      <div class="slides-item">
-        <section class="banner banner--3">
-          <div class="container">
-            <div class="banner__box">
-              <h2 class="heading-head"><span class="heading-head--main">Lịch sử Việt Nam</span><span class="heading-head--sub">Việt Nam là quốc gia có về dày về lịch sử trải dài thời kỳ vua Hùng tới nay.</span></h2>
-            </div>
-            <div class="mouse-scroll"><a class="mouse-scroll__link" href="#section-overview"></a></div>
-          </div>
-        </section>
-      </div>
-      <ul class="slides-list">
-        <li class="slides-circle"><a class="slides-link" href="#"></a></li>
-        <li class="slides-circle"><a class="slides-link active" href="#"></a></li>
-        <li class="slides-circle"><a class="slides-link" href="#"></a></li>
-      </ul>
-    </div>
+    </section> 
+    <!-- section overview-->   
     <section class="section-overview">
       <div class="container">
         <div class="u-flex u-align-item-center u-justify-content-center u-margin-bottom-8">
@@ -213,6 +191,7 @@
         </div>
       </div>
     </section>
+    <!-- footer-->
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -248,6 +227,7 @@
           </div>
         </div>
       </div>
+      <!--footer copy-->
       <div class="footer__copy">
         <div class="container">
           <div class="u-text-center">
