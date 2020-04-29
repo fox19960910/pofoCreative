@@ -38,6 +38,14 @@ var tabs = {
                 }
             }))
         })
+        tabContent.forEach((content)=>{
+            content.classList.remove('active')
+            dataStore.forEach((period=>{
+                if(period == content.id){
+                    content.classList.add('active')
+                }
+            }))
+        })
     },
 }
 tabs.init();
