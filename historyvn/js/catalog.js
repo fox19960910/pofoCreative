@@ -10,10 +10,11 @@ var catalog = {
         let heightOfHeader = document.querySelector('.header').offsetHeight
         console.log(heightOfHeader)
         let sticky = catalog.offsetTop - heightOfHeader
-        let heightOfFooter = footer.offsetTop - screen.height
+        let heightOfFooter = footer.offsetTop - screen.height + screen.height/5
         
         window.addEventListener('scroll',function(){
-            console.log(sticky)
+
+            console.log('[chiều cao của footer đã trừ đi màn hình]',footer.offsetTop,'[chiều cao của windowpage]',window.pageYOffset)
             if (sticky <= window.pageYOffset){
                 catalog.classList.add('active');
             }else{
