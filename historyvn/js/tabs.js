@@ -6,7 +6,9 @@ var tabs = {
     tabPeriod:function() {
         let tabLinks = document.querySelectorAll('.tab__link');
         let tabContent = document.querySelectorAll('.tab__content');
-        console.log(tabLinks,tabContent)
+
+        
+        // click show tab.
         tabLinks.forEach((link,index)=>{
             link.addEventListener('click',(e)=>{
                 e.preventDefault();
@@ -23,6 +25,18 @@ var tabs = {
                 })
                 tabContent[index].classList.add('active')
             })
+        })
+
+
+        //load tab
+        let dataStore = JSON.parse(localStorage.getItem('id-period'))
+        tabLinks.forEach((link)=>{
+            link.classList.remove('active')
+            dataStore.forEach((period=>{
+                if(period == link.id){
+                    link.classList.add('active')
+                }
+            }))
         })
     },
 }
